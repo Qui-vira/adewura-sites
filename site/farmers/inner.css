@@ -6,16 +6,6 @@
 .nav__left .pill[aria-current='page'] { --pill-bg: var(--olive); --pill-fg: var(--butter); }
 
 /* below 1100px the nav keeps only the parent link, so the page links sit under it */
-.pages {
-  display: none;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 1rem var(--gutter) 0;
-  background: var(--butter);
-}
-.pages .pill { min-height: 2.5rem; }
-.pages .pill[aria-current='page'] { --pill-bg: var(--olive); --pill-fg: var(--butter); }
-@media (max-width: 1100px) { .pages { display: flex; } }
 
 /* ---------- Page head ---------- */
 

@@ -9,24 +9,6 @@
 .inner .nav .pill--mint { --bg: var(--forest); --fg: var(--mint); --line: var(--forest); }
 .nav__links a[aria-current='page'] { text-decoration-color: currentColor; }
 
-/* phones: the page links sit under the nav, since the nav hides them */
-.pages {
-  display: none;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 1rem var(--gutter) 0;
-}
-.pages a {
-  flex: none;
-  padding: 0.55rem 1rem;
-  border: 1px solid rgb(47 79 43 / 0.3);
-  border-radius: 999px;
-  color: var(--forest-deep);
-  font-size: 0.9375rem;
-  text-decoration: none;
-}
-.pages a[aria-current='page'] { background: var(--forest); border-color: var(--forest); color: var(--mint); }
-@media (max-width: 860px) { .pages { display: flex; } }
 
 /* ---------- Page head ---------- */
 

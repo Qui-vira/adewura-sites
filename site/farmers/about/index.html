@@ -34,17 +34,21 @@
       <span class="wordmark__text">Giant Farmers</span>
     </a>
     <div class="nav__right">
-      <a class="pill" data-booking="farmers" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Adewura%20Giant%20Farmers%20Trust%20Fund.">Book a call</a>
+       <details class="menu">
+        <summary aria-label="Menu"><span class="menu__icon" aria-hidden="true"></span></summary>
+        <nav class="menu__panel" aria-label="Pages">
+          <a href="../">Home</a>
+          <a href="../programs/">Programs</a>
+          <a href="../about/" aria-current="page">About</a>
+          <a href="../contact/">Contact</a>
+          <a class="menu__parent" href="../../">&larr; <span data-parent-name>Adewura Group</span></a>
+        </nav>
+      </details>
+     <a class="pill" data-booking="farmers" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Adewura%20Giant%20Farmers%20Trust%20Fund.">Book a call</a>
     </div>
   </header>
 
   <main id="main">
-    <nav class="pages" aria-label="Pages">
-      <a class="pill pill--ghost" href="../">Home</a>
-      <a class="pill pill--ghost" href="../programs/">Programs</a>
-      <a class="pill pill--ghost" href="../about/" aria-current="page">About</a>
-      <a class="pill pill--ghost" href="../contact/">Contact</a>
-    </nav>
     <header class="phead">
       <h1>About the Trust Fund</h1>
       <p>We are here to assist cultivators in nurturing thriving and resilient harvests.</p>
@@ -111,5 +115,6 @@
     <p>Part of <a href="../../"><span data-parent-name>Adewura Group</span></a></p>
     <p class="foot__note" data-parent-note>Prototype for client review.</p>
   </footer>
+  <script src="../../menu.js" defer></script>
 </body>
 </html>

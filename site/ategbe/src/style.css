@@ -774,3 +774,69 @@ em { font-style: italic; }
 .day-dot--white { background: #fff; box-shadow: inset 0 0 0 1.5px #301f93; }
 .calendar { margin: 1.5rem 0 0; }
 .calendar img { width: 100%; max-width: 64rem; height: auto; border-radius: 0.5rem; box-shadow: 0 1.75rem 3rem -1.5rem rgb(48 31 147 / 0.45); }
+
+/* ---------- Phone menu: every page of the brand in one tap, shown only when the nav hides its links ---------- */
+.menu { display: none; }
+.menu > summary {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
+  transition: transform 160ms var(--ease-out);
+}
+.menu > summary::-webkit-details-marker { display: none; }
+.menu > summary:active { transform: scale(0.94); }
+.menu__icon, .menu__icon::before, .menu__icon::after {
+  display: block;
+  width: 1rem;
+  height: 1.5px;
+  border-radius: 1px;
+  background: currentColor;
+  transition: transform 200ms var(--ease-out), background-color 200ms ease;
+}
+.menu__icon { position: relative; }
+.menu__icon::before, .menu__icon::after { content: ''; position: absolute; left: 0; }
+.menu__icon::before { transform: translateY(-5px); }
+.menu__icon::after { transform: translateY(5px); }
+.menu[open] .menu__icon { background: transparent; }
+.menu[open] .menu__icon::before { transform: rotate(45deg); }
+.menu[open] .menu__icon::after { transform: rotate(-45deg); }
+.menu__panel {
+  position: fixed;
+  top: calc(var(--nav-h) + 0.25rem);
+  left: var(--gutter);
+  right: var(--gutter);
+  z-index: 200;
+  display: grid;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  background: var(--indigo, #301f93);
+  color: #fff8e6;
+  box-shadow: 0 1.5rem 3rem -1rem rgb(0 0 0 / 0.35);
+  transform-origin: top right;
+  animation: menu-in 200ms var(--ease-out);
+}
+.menu__panel a {
+  padding: 0.95rem 1rem;
+  border-radius: 0.8rem;
+  font: 600 1.35rem/1.1 'Cormorant Garamond', Georgia, serif;
+  color: inherit;
+  text-decoration: none;
+}
+.menu__panel a[aria-current='page'] { background: rgb(255 255 255 / 0.14); }
+.menu__panel .menu__parent { margin-top: 0.25rem; border-top: 1px solid rgb(255 255 255 / 0.2); border-radius: 0 0 0.8rem 0.8rem; font-size: 0.9375rem; opacity: 0.85; }
+@media (hover: hover) and (pointer: fine) { .menu__panel a:hover { background: rgb(255 255 255 / 0.14); } }
+@keyframes menu-in { from { opacity: 0; transform: translateY(-0.4rem) scale(0.98); } }
+@media (max-width: 900px) { .menu { display: block; } }
+
+/* Learn page: jump links to its three parts, landing clear of the fixed nav */
+.phead__links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+#iwure-title, #calendar, #odu-title { scroll-margin-top: calc(var(--nav-h) + 1.5rem); }
+/* phones: smaller round buttons, and the shortest call label on the narrowest screens */
+.nav__short { display: none; }
+@media (max-width: 480px) { .nav__right { gap: 0.5rem; } .menu > summary, .sound { width: 2.5rem; height: 2.5rem; } }
+@media (max-width: 360px) { .nav__long { display: none; } .nav__short { display: inline; } }

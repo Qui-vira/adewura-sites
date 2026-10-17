@@ -48,7 +48,18 @@
       <button class="sound" id="sound-toggle" type="button" aria-pressed="false" aria-label="Sound off" hidden>
         <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
       </button>
-      <a class="pill" data-booking="ategbe" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Il%C3%A9%20%C3%80t%C3%A8gb%C3%A8.">Book a call</a>
+      <details class="menu">
+        <summary aria-label="Menu"><span class="menu__icon" aria-hidden="true"></span></summary>
+        <nav class="menu__panel" aria-label="Pages">
+          <a href="./" aria-current="page">Home</a>
+          <a href="history/">History</a>
+          <a href="custodian/">Custodian</a>
+          <a href="services/">Services</a>
+          <a href="learn/">Learn</a>
+          <a class="menu__parent" href="../">&larr; <span data-parent-name>Adewura Group</span></a>
+        </nav>
+      </details>
+      <a class="pill" data-booking="ategbe" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Il%C3%A9%20%C3%80t%C3%A8gb%C3%A8."><span class="nav__long">Book a call</span><span class="nav__short">Call</span></a>
     </div>
   </header>
 
@@ -163,5 +174,6 @@
   </footer>
 
   <script type="module" src="dist/main.js"></script>
+  <script src="../menu.js" defer></script>
 </body>
 </html>

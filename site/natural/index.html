@@ -48,7 +48,18 @@
       <button class="sound" id="sound-toggle" type="button" aria-pressed="false" aria-label="Sound off" hidden>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sound__wave" d="M3 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></svg>
       </button>
-      <a class="pill pill--mint" href="#order"><span class="nav__long">Order Restoria</span><span class="nav__short">Order</span></a>
+      <details class="menu">
+        <summary aria-label="Menu"><span class="menu__icon" aria-hidden="true"></span></summary>
+        <nav class="menu__panel" aria-label="Pages">
+          <a href="./" aria-current="page">Home</a>
+          <a href="restoria/">Restoria</a>
+          <a href="products/">Products</a>
+          <a href="about/">About</a>
+          <a href="contact/">Contact</a>
+          <a class="menu__parent" href="../">&larr; <span data-parent-name>Adewura Group</span></a>
+        </nav>
+      </details>
+      <a class="pill pill--mint" data-booking="natural" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Adewura%20Natural%20Medical%20Centre."><span class="nav__long">Book a call</span><span class="nav__short">Call</span></a>
     </div>
   </header>
 
@@ -164,5 +175,6 @@
   </footer>
 
   <script type="module" src="dist/main.js"></script>
+  <script src="../menu.js" defer></script>
 </body>
 </html>
