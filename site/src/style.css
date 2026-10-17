@@ -352,13 +352,51 @@ p { margin: 0; text-wrap: pretty; }
 .foot {
   position: relative;
   display: grid;
+  justify-items: center;
   gap: 1rem;
   padding: clamp(4rem, 9vw, 7rem) var(--gutter) 3rem;
   background: var(--paper-2);
+  text-align: center;
 }
 .foot__name { font: 400 clamp(2.2rem, 5vw, 3.6rem)/1 var(--display); }
-.foot__links { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin: 0; padding: 0; list-style: none; }
-.foot__note { font-size: 0.8125rem; color: var(--ink-2); }
+.foot__family { margin-top: -0.5rem; }
+.foot__note { margin-top: 1rem; font-size: 0.8125rem; color: var(--ink-2); }
+
+/* ---------- The family: the three logos, unchanged, hung from one line ---------- */
+
+.family {
+  --line: var(--clay);
+  --drop: clamp(1rem, 2.4vw, 1.75rem);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* no gap, so the column centres sit at 1/6, 1/2, 5/6 */
+  width: min(56rem, 100%);
+  padding-top: calc(var(--drop) * 2);
+  background: radial-gradient(circle at 50% var(--drop), var(--line) 4.5px, transparent 5px) no-repeat;
+}
+.family::before,
+.family::after { content: ''; position: absolute; background: var(--line); }
+.family::before { top: 0; left: calc(50% - 1px); width: 2px; height: var(--drop); }
+.family::after { top: calc(var(--drop) - 1px); left: calc(100% / 6); right: calc(100% / 6); height: 2px; }
+.family__kid {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: calc(var(--drop) * 0.75) 0.5rem 0;
+  border-radius: 0.5rem;
+}
+.family__kid::before,
+.family__kid::after { content: ''; position: absolute; left: 50%; background: var(--line); }
+.family__kid::before { top: calc(var(--drop) * -1); width: 2px; height: var(--drop); margin-left: -1px; }
+.family__kid::after { top: -4px; width: 8px; height: 8px; margin-left: -4px; border-radius: 50%; }
+.family__kid img { display: block; width: min(100%, 13.75rem); height: auto; }
+.family__kid--crown img { width: min(100%, 11.5rem); }
+.family__kid--ategbe img { width: min(100%, 15.5rem); }
+a.family__kid img { transition: transform 200ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  a.family__kid:hover img { transform: translateY(-3px); }
+}
+a.family__kid:active img { transform: scale(0.97); }
 
 /* ---------- Opening overlay (built by JS) ---------- */
 
@@ -418,7 +456,9 @@ p { margin: 0; text-wrap: pretty; }
 }
 .welcome__title { font: 400 clamp(3.8rem, 13vw, 10rem)/0.9 var(--display); letter-spacing: -0.01em; }
 .welcome__sub { font: 400 italic clamp(1.4rem, 3vw, 2.25rem)/1.15 var(--display); color: var(--clay); }
-.welcome__houses { max-width: 40ch; color: var(--ink-2); }
+.welcome__family { margin-top: 0.25rem; }
+.welcome { overflow-y: auto; }
+@media (max-height: 560px) { .welcome__family { display: none; } }
 .welcome__enter { margin-top: 0.75rem; }
 .welcome__enter.no-ring:focus-visible { outline: none; }
 .welcome__foot {

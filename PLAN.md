@@ -13,6 +13,9 @@ This section overrides anything below that disagrees with it.
 - Google: Google Business Profiles for each business, and real Google reviews shown on the site once the profiles exist.
 - Old domains (adewuranatural.com, ileategbe.org, adewuragiantfarmers.org) forward to the matching new pages for 6 to 12 months, then expire. AGFICI stays untouched.
 - SEO on the new domain. Preview builds are marked noindex until launch, so search engines don't index a duplicate.
+- Logos (17 Oct 2026): the three brand logos stay exactly as they are. The parent logo is the three of them hung from one line under the parent name, a family tree, approved by the designer. It sits on the parent's welcome screen and in its footer. Files in `site/img/family/`: only the white background was removed from the Natural logo and one stray speck from the crown file.
+- Domain: the client suggested adewuragroup.com (17 Oct 2026, "I think"). Not confirmed or bought yet.
+- Social: the brands are not on TikTok or Instagram yet (client, 17 Oct 2026), so the site carries no social links.
 - Trust Fund colors stay butter, maize gold and leaf green. Reason: its logo is gold and green (sampled #E4C352, #57EA68). Amber stays with Àtègbè.
 
 Trust Fund content on hand (saved homepage, 17 Oct 2026): name "Adewura Giant Farmers, Inc", the mission statement, four programs (Corn Field, Livestock Farming, Poultry Farming, Plantain Farming), email adewuragiantfarmers@gmail.com, the crown logo. Everything else on that page is template filler (fake 4.8 Google rating, (123) 456-7890, an invented testimonial, lorem ipsum) and is not used. The four photos are Pixabay stock and are not used. The client confirmed that the farm photos and videos previously on the AGFICI site came from the Trust Fund, so they are used on the Trust Fund page.
@@ -310,7 +313,7 @@ No shared visual code, since the identities are separate. Build tools (image res
 
 ## 10. Questions for the client
 
-1. Keep the current logos or design new ones?
+1. ~~Keep the current logos or design new ones?~~ Keep them (17 Oct 2026).
 2. Restoria: medical brand only, or does AGFICI keep a mention?
 3. House spelling of Àtègbè, Òrìṣà and the custodian's name. The old site mixes forms.
 4. Current AGFICI events. The ones on the site are from January 2026 or earlier.

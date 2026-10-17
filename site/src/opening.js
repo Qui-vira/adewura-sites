@@ -86,7 +86,11 @@ export async function runOpening({ ready, reduced, parentName, onEnter }) {
     <div class="welcome__center">
       <p class="welcome__title" aria-hidden="true"></p>
       <p class="welcome__sub">Three houses. One family.</p>
-      <p class="welcome__houses">Adewura Natural, Ilé Àtègbè and the Adewura Giant Farmers Trust Fund.</p>
+      <div class="family welcome__family" role="img" aria-label="The family: Adewura Natural Medical Centre, the Adewura Giant Farmers Trust Fund and Ilé Àtègbè">
+        <span class="family__kid"><img src="img/family/natural.webp" width="340" height="112" alt=""></span>
+        <span class="family__kid family__kid--crown"><img src="img/family/crown.webp" width="369" height="240" alt=""></span>
+        <span class="family__kid family__kid--ategbe"><img src="img/family/ategbe.webp" width="447" height="93" alt=""></span>
+      </div>
       <button class="pill pill--solid welcome__enter" type="button">Enter with sound <span class="pill__dot" aria-hidden="true"></span></button>
     </div>
     <div class="welcome__foot">

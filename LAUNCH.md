@@ -14,6 +14,8 @@ All settings live in one file, `site.config.json`. After changing it, run `npm r
 
 ## 2. Buy the new domain (client)
 
+The client suggested adewuragroup.com on 17 Oct 2026 ("I think"). The .com registry had no record for it on 17 Oct 2026.
+
 Checked 17 Oct 2026 in the official domain registries: adewura.com, adewura.org, adewuragroup.com, adewuragroup.org, adewuraholdings.com and adewurafamily.com had no registration record. That strongly suggests they are free, but only a registrar can confirm it at checkout.
 
 Then (designer):
@@ -68,7 +70,8 @@ AGFICI (adewuragfici.com) is not touched.
 ## Still needed from the client
 
 - Parent company name
-- Domain purchase
+- Domain purchase (adewuragroup.com suggested, not confirmed)
+- If the parent is named after the domain, "Adewura Group" replaces the working name "Adewura"
 - Confirm +1 678 373 6836 is the right WhatsApp number for Book a call
 - Program details for the Trust Fund
 - Approval of the Àtègbè crown, icons and divination powder
