@@ -761,3 +761,16 @@ em { font-style: italic; }
 .prose blockquote { margin: 0; padding: 1rem 1.25rem; border-left: 3px solid currentColor; background: rgb(255 255 255 / 0.5); }
 .prose blockquote footer { margin-top: 0.6rem; font-size: 0.9375rem; }
 .treasures { display: grid; gap: 0.6rem; margin: 0; padding-left: 1.2rem; }
+
+/* the 2026 prayer calendar on the Learn page */
+.days { display: grid; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
+.days li, .today { display: flex; gap: 0.75rem; align-items: baseline; }
+.today { padding: 0.9rem 1.1rem; border-radius: 0.75rem; background: rgb(255 255 255 / 0.6); }
+.today[hidden] { display: none; }
+.day-dot { flex: none; width: 0.85rem; height: 0.85rem; border-radius: 50%; transform: translateY(0.1rem); }
+.day-dot--green { background: #2f8f3a; }
+.day-dot--red { background: #c62f26; }
+.day-dot--purple { background: #6a35b0; }
+.day-dot--white { background: #fff; box-shadow: inset 0 0 0 1.5px #301f93; }
+.calendar { margin: 1.5rem 0 0; }
+.calendar img { width: 100%; max-width: 64rem; height: auto; border-radius: 0.5rem; box-shadow: 0 1.75rem 3rem -1.5rem rgb(48 31 147 / 0.45); }

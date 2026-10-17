@@ -39,7 +39,7 @@
     <header class="phead">
       <h1>Learn</h1>
       <div class="rule" aria-hidden="true"></div>
-      <p class="phead__lede">Daily prayers, and the first six of the 16 major <span lang="yo">Odù Ifá</span>, from the teaching of Oba <span lang="yo">Àtègbè</span>.</p>
+      <p class="phead__lede">Daily prayers, the 2026 prayer calendar, and the first six of the 16 major <span lang="yo">Odù Ifá</span>, from the teaching of Oba <span lang="yo">Àtègbè</span>.</p>
     </header>
 
     <section class="prose prose--wide" aria-labelledby="iwure-title">
@@ -101,6 +101,45 @@
       </div>
       <!-- Prayer text as published on ileategbe.org. Only the stand-in letters ş and ę were changed to ṣ and ẹ. Spellings such as śọ and gbáhǜn are kept as written, pending the house's review. -->
       <p class="note">The prayers are given as the house published them. Their spelling is awaiting the house’s review.</p>
+    </section>
+
+    <section class="prose prose--wide" id="calendar" aria-labelledby="calendar-title">
+      <div class="prose__col">
+        <h2 id="calendar-title">Prayer calendar 2026</h2>
+        <p>Each day of the year belongs to one group of <span lang="yo">Òrìṣà</span>, in a cycle of four days. The house's calendar marks each day in the group's color.</p>
+        <p class="today" id="today" hidden></p>
+        <!-- Names as printed on the house's 2026 calendar (ileategbe.org/prayer-calendar), pending the house's review. -->
+        <ul class="days" lang="yo">
+          <li><span class="day-dot day-dot--green" aria-hidden="true"></span><span><span class="visually-hidden">Green: </span>Ifá, Ọsanyìn, Olókun, Ajé, Ọlọsà, Ọṣun, Èṣù</span></li>
+          <li><span class="day-dot day-dot--red" aria-hidden="true"></span><span><span class="visually-hidden">Red: </span>Ògún, Ọṣọ́ọ̀ṣì, Ẹgbẹ́, Ìja, Orò</span></li>
+          <li><span class="day-dot day-dot--purple" aria-hidden="true"></span><span><span class="visually-hidden">Purple: </span>Jàkúta/Ṣàngó, Yemọja, Ọbà, Ṣẹ̀rẹ́, Ọya, Aganjú, Baáyànì (Dàda)</span></li>
+          <li><span class="day-dot day-dot--white" aria-hidden="true"></span><span><span class="visually-hidden">White: </span>Ọbàtálá, Ọbàlùfọ̀n, Egúngún, Ìyàmi, Ọbalúayé</span></li>
+        </ul>
+      </div>
+      <figure class="calendar">
+        <a href="../img/prayer-calendar-2026.jpg"><img src="../img/prayer-calendar-2026.webp" width="1206" height="865" loading="lazy" decoding="async" alt="Ilé Àtègbè 2026 prayer calendar: twelve months, each day colored green, red, purple or white for its group of Òrìṣà, with one day about every four weeks highlighted in blue."></a>
+      </figure>
+      <p class="actions"><a class="pill pill--arrow" href="../img/prayer-calendar-2026.jpg" download="Ile-Ategbe-2026-Prayer-Calendar.jpg">Download the 2026 prayer calendar <span class="pill__dot" aria-hidden="true"></span></a></p>
+      <script>
+        // which group's day it is today, read from the 2026 calendar: the four groups repeat
+        // every four days, starting with green on 1 January 2026
+        (() => {
+          const now = new Date();
+          if (now.getFullYear() !== 2026) return;
+          const day = Math.round((new Date(2026, now.getMonth(), now.getDate()) - new Date(2026, 0, 1)) / 864e5);
+          const groups = [
+            ['green', 'Ifá, Ọsanyìn, Olókun, Ajé, Ọlọsà, Ọṣun, Èṣù'],
+            ['red', 'Ògún, Ọṣọ́ọ̀ṣì, Ẹgbẹ́, Ìja, Orò'],
+            ['purple', 'Jàkúta/Ṣàngó, Yemọja, Ọbà, Ṣẹ̀rẹ́, Ọya, Aganjú, Baáyànì (Dàda)'],
+            ['white', 'Ọbàtálá, Ọbàlùfọ̀n, Egúngún, Ìyàmi, Ọbalúayé'],
+          ];
+          const [color, names] = groups[day % 4];
+          const el = document.getElementById('today');
+          const date = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+          el.innerHTML = `<span class="day-dot day-dot--${color}" aria-hidden="true"></span><span><strong>Today, ${date}:</strong> <span lang="yo">${names}</span></span>`;
+          el.hidden = false;
+        })();
+      </script>
     </section>
 
     <section class="prose prose--wide" aria-labelledby="odu-title">
