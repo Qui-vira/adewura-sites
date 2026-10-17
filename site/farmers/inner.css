@@ -157,3 +157,11 @@
 .founder__message { margin: 0.5rem 0; padding-left: 1.1rem; border-left: 3px solid var(--maize, #e8b931); display: grid; gap: 0.8rem; }
 .founder__message footer { font-weight: 600; }
 .band--intro { padding-bottom: 0; }
+
+/* the farm's own videos: steps of the corn project and the plantain work */
+.steps__title { margin-top: 1rem; }
+.step { display: grid; gap: 0.9rem; margin-top: 1.5rem; }
+.step > p { max-width: 60ch; }
+.clips { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 1rem; align-items: start; }
+.clips--wide { grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); }
+.clips video { display: block; width: 100%; height: auto; border-radius: 1rem; background: var(--olive); box-shadow: 0 1rem 2rem -1.25rem rgb(64 63 43 / 0.5); }

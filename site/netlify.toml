@@ -13,3 +13,9 @@
   for = "/*/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Farm videos: large, rarely replaced; a week in the browser cache (a replaced file should get a new name)
+[[headers]]
+  for = "/*/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
