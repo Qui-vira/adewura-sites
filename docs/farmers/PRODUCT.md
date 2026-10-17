@@ -23,7 +23,7 @@ From the old site (adewuragiantfarmers.org, saved 17 Oct 2026): "To provide a co
 - Lives at `/farmers/` under the parent brand on one domain (Option 3).
 - Programs named on the old site: Corn Field, Livestock Farming, Poultry Farming, Plantain Farming. No descriptions exist yet.
 - Hero object: the 3D maize cob, which fits the Corn Field program.
-- Separate from AGFICI (adewuragfici.com), which the client asked us not to touch. No AGFICI words or photos are used here.
+- Separate from AGFICI (adewuragfici.com), which the client asked us not to touch. No AGFICI wording is used here.
 
 ## Brand Commitments
 
@@ -35,4 +35,5 @@ From the old site (adewuragiantfarmers.org, saved 17 Oct 2026): "To provide a co
 - Real: logo, mission statement, program names, email adewuragiantfarmers@gmail.com.
 - Not real, never use: the old site's "4.8 rating on Google", "(123) 456-7890", the "Emma Fieldsworth" testimonial, lorem ipsum, "Enroll now" and "Admission" from a day-care template.
 - Stock: the four photos on the old site are Pixabay stock (combine harvester, countryside, tractor, wheat).
-- Needed from the client: real farm photos, program descriptions, phone number, address for the Google Business Profile, booking link.
+- Farm photos and videos: the client confirmed on 17 Oct 2026 that the pictures on the AGFICI site came from the Trust Fund, so the real field photos and both videos are used here (land clearing, maize, cassava, goats, processing site). Only pictures moved; no AGFICI text.
+- Needed from the client: program descriptions, phone number, address for the Google Business Profile, the WhatsApp number.

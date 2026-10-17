@@ -23,13 +23,11 @@ Then (designer):
 4. Build, commit, push.
 
 
-## 3. Booking pages (client, then designer)
+## 3. Book a call on WhatsApp (client gives the number, designer sets it)
 
-The client creates one booking page per brand. Either works:
-- Calendly (free plan), or
-- Google Calendar appointment schedules.
+The client chose WhatsApp, one number for all three brands (17 Oct 2026).
 
-Paste each link into `site.config.json` under `"booking"`: `"natural"`, `"ategbe"`, `"farmers"`. Until a link is filled in, Book a call opens an email to that brand instead.
+Put the number in `site.config.json` under `"whatsapp"` → `"number"`: digits only, with the country code, for example `2348012345678`. Every Book a call button then opens WhatsApp with a message naming the brand, for example "Hello, I would like to book a call with Ilé Àtègbè." The messages are editable in the same place. Until the number is set, Book a call opens an email to that brand.
 
 
 ## 4. Google Business Profiles (client)
@@ -71,8 +69,8 @@ AGFICI (adewuragfici.com) is not touched.
 
 - Parent company name
 - Domain purchase
-- Booking links for the three brands
-- Real farm photos and program details for the Trust Fund
+- The WhatsApp number for Book a call
+- Program details for the Trust Fund
 - Approval of the Àtègbè crown, icons and divination powder
 - Confirmation of Natural's phone numbers and the Restoria price
 - Review of the Aristolochia (Akoogun) safety note on two Natural products

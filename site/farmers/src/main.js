@@ -124,7 +124,7 @@ addEventListener('resize', () => { scene?.resize(); dust.resize(); });
 // ---------- Panels after the stage ----------
 const nav = document.getElementById('nav');
 // the nav takes the ground of whichever section sits under it
-for (const [sel, ground] of [['#programs', 'maize'], ['#mission', 'cream'], ['#involved', 'leaf']]) {
+for (const [sel, ground] of [['#programs', 'maize'], ['#field', 'cream'], ['#mission', 'cream'], ['#involved', 'leaf']]) {
   ScrollTrigger.create({
     trigger: sel,
     start: 'top 4.5rem',
@@ -143,6 +143,30 @@ if (!reduced && matchMedia('(min-width: 761px)').matches) {
     });
   });
 }
+
+// field photos drift at different depths; videos load and play only while on screen
+if (!reduced) {
+  const wide = matchMedia('(min-width: 761px)').matches;
+  document.querySelectorAll('.tile').forEach((tile) => {
+    const depth = Number(tile.dataset.depth) || 0;
+    gsap.to(tile, {
+      y: () => depth * (wide ? -520 : -200),
+      ease: 'none',
+      scrollTrigger: { trigger: '#collage', start: 'top bottom', end: 'bottom top', scrub: true, invalidateOnRefresh: true },
+    });
+  });
+}
+const videoIO = new IntersectionObserver((entries) => {
+  for (const { target: v, isIntersecting } of entries) {
+    if (isIntersecting) {
+      if (!v.src) v.src = v.dataset.src;
+      if (!reduced) v.play().catch(() => {});
+    } else {
+      v.pause();
+    }
+  }
+}, { rootMargin: '200px 0px' });
+document.querySelectorAll('video[data-src]').forEach((v) => videoIO.observe(v));
 
 // ---------- Opening ----------
 toggle.hidden = false;

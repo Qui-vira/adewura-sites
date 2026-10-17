@@ -56,9 +56,12 @@ function applyConfig() {
       .replace(/(<meta property="og:image" content=")(?:https?:\/\/[^/"]+)?\/?([^"]*)(")/, `$1${base}/$2$3`)
       .replace(/(<meta name="robots" content=")[^"]*(")/, `$1${config.indexable ? 'index, follow' : 'noindex, nofollow'}$2`);
     html = setMarked(html, 'data-parent-name', config.parentName);
-    // booking links: <a data-booking="natural" href="...">; empty config keeps the email fallback
+    // booking links: <a data-booking="natural" href="..."> open WhatsApp with a message naming the brand;
+    // with no number set they keep their email fallback
+    const wa = config.whatsapp;
+    const digits = (wa?.number || '').replace(/\D/g, '');
     html = html.replace(/(<a\b[^>]*\sdata-booking="(\w+)"[^>]*\shref=")([^"]*)(")/g, (m, a, brand, old, b) =>
-      config.booking?.[brand] ? a + config.booking[brand] + b : m);
+      digits ? `${a}https://wa.me/${digits}?text=${encodeURIComponent(wa.messages?.[brand] || '')}${b}` : m);
     // JSON-LD url fields point at the configured address
     html = html.replace(/"url": "https?:\/\/[^"]*?(\/(?:natural\/|ategbe\/|farmers\/)?)"/g, (_, path) => `"url": "${base}${path}"`);
     writeFileSync(file, html);

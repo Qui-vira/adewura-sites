@@ -21,10 +21,14 @@
       "priority": 0.9
     }
   ],
-  "booking": {
-    "natural": "",
-    "ategbe": "",
-    "farmers": ""
+  "whatsapp": {
+    "_note": "Book a call opens this WhatsApp number on every brand. Digits only with country code, no + or spaces, e.g. 2348012345678. Empty keeps the email fallback.",
+    "number": "",
+    "messages": {
+      "natural": "Hello, I would like to book a call with Adewura Natural Medical Centre.",
+      "ategbe": "Hello, I would like to book a call with Ilé Àtègbè.",
+      "farmers": "Hello, I would like to book a call with Adewura Giant Farmers Trust Fund."
+    }
   },
   "redirects": {
     "_note": "Old domains forward to the new pages for 6 to 12 months. Works only once each old domain is added to the Netlify site as a domain alias. adewuranatural.com lists only its real pages, so the spam pages left by the hack return 404 instead of being forwarded.",
