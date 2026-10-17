@@ -321,7 +321,7 @@ No shared visual code, since the identities are separate. Build tools (image res
 3. House spelling of Àtègbè, Òrìṣà and the custodian's name. The old site mixes forms.
 4. Current AGFICI events. The ones on the site are from January 2026 or earlier.
 5. Which AGFICI photos are real AGFICI work, and which are stock.
-6. Full-size originals of the small photos: Natural product shots (about 800px), the medical director portrait (640px), the Àtègbè ancestor portraits (about 220px), the Odù Ifá slides (480x360), both AGFICI videos (368x656 and 480x848).
+6. ~~Full-size originals of the small photos~~ Not needed: the designer is happy with the current photos (17 Oct 2026). Was: Natural product shots (about 800px), the medical director portrait (640px), the Àtègbè ancestor portraits (about 220px), the Odù Ifá slides (480x360), both AGFICI videos (368x656 and 480x848).
 7. Restoria label artwork file.
 8. Approval to show the Àtègbè crown in 3D.
 9. Real privacy, terms and refund policies. AGFICI's are unedited Wix templates.
