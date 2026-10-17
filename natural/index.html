@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adewura Natural | Restoria and natural remedies from plants</title>
+  <meta name="description" content="Adewura Natural Medical Centre makes natural remedies from plants. Meet Restoria, a plant-based nighttime formula with hibiscus and peperomia pellucida.">
+  <meta name="theme-color" content="#467041">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='12' fill='%23467041'/%3E%3Cpath fill='%23F2F5EC' d='M12 5.2c3.6 1.6 5.4 4.4 5.4 7.6 0 3.4-2.4 5.8-5.4 6-3-.2-5.4-2.6-5.4-6 0-3.2 1.8-6 5.4-7.6zm-.6 3v9.4h1.2V8.2z'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/YoungSerif-400-full.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="dist/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="wordmark" id="wordmark" href="#top" aria-label="Adewura Natural home">Adewura Natural</a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#restoria">Restoria</a>
+      <a href="#range">The range</a>
+      <a href="#director">Medical director</a>
+    </nav>
+    <div class="nav__right">
+      <button class="sound" id="sound-toggle" type="button" aria-pressed="false" aria-label="Sound off" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sound__wave" d="M3 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></svg>
+      </button>
+      <a class="pill pill--mint" href="#order"><span class="nav__long">Order Restoria</span><span class="nav__short">Order</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="stage" id="top" aria-label="Restoria">
+      <div class="stage__sticky">
+        <canvas class="stage__petals" id="petals" aria-hidden="true"></canvas>
+        <canvas class="stage__gl" id="gl" aria-hidden="true"></canvas>
+        <div class="stage__shadow" id="shadow" aria-hidden="true"></div>
+
+        <div class="intro" id="intro">
+          <h1 class="intro__line">Rest is not a luxury.</h1>
+          <p class="intro__cue" aria-hidden="true"><span class="intro__line-cue"></span>Scroll slowly</p>
+        </div>
+
+        <h2 class="ghost" data-ghost="0">Quiet your mind at night</h2>
+        <h2 class="ghost" data-ghost="1">Hibiscus</h2>
+        <h2 class="ghost" data-ghost="2">Peperomia pellucida</h2>
+        <h2 class="ghost" data-ghost="3">350 mg of botanicals</h2>
+
+        <div class="stage__aside" id="aside">
+          <p>Restoria is a plant-based nighttime formula, made to help the body shift from daily stress into rest.</p>
+          <a class="text-link" href="#restoria">Read about Restoria</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="restoria" id="restoria" data-nav="rose" aria-labelledby="restoria-title">
+      <div class="restoria__head">
+        <h2 id="restoria-title">A gentle botanical formula for the modern mind</h2>
+        <p class="restoria__lede">Modern life has made rest feel like a luxury instead of a necessity. Deadlines, work pressure and constant notifications keep the mind running long after the body is tired.</p>
+      </div>
+
+      <div class="restoria__body">
+        <div class="botanical">
+          <h3>Hibiscus</h3>
+          <p>A plant traditionally used to support relaxation and ease physical tension. Hibiscus contains natural antioxidants.</p>
+        </div>
+        <div class="botanical">
+          <h3>Peperomia pellucida</h3>
+          <p>A medicinal herb long used in traditional wellness systems to support calm and overall relaxation.</p>
+        </div>
+
+        <aside class="label" aria-label="From the Restoria bottle label">
+          <p class="label__name">Restoria<sup>™</sup></p>
+          <p class="label__tag">Calm · Restore · Sleep</p>
+          <ul class="label__facts">
+            <li>Hibiscus + Peperomia Pellucida</li>
+            <li>Melatonin-free</li>
+            <li>Non-GMO · Gluten-free · Soy-free</li>
+            <li>30 capsules · 350 mg per capsule</li>
+            <li>Dietary supplement</li>
+          </ul>
+          <div class="label__order" id="order">
+            <p class="label__price">$29.99</p>
+            <a class="pill pill--forest pill--arrow" href="mailto:adewuranatural@gmail.com?subject=Order%20Restoria">Order Restoria <span class="pill__dot" aria-hidden="true"></span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="range" id="range" data-nav="leaf" aria-labelledby="range-title">
+      <div class="range__head">
+        <h2 class="glitch" id="range-title" data-text="Why plants first">Why plants first</h2>
+        <p>Adewura Natural Remedies makes its products from natural plants rich in vitamins and minerals such as potassium, magnesium and zinc. The work with local farmers who grow these plants also creates jobs.</p>
+      </div>
+      <div class="range__float" id="float">
+        <figure class="bottle bottle--a" data-depth="0.16"><img src="img/restoria-bottle-480.webp" srcset="img/restoria-bottle-480.webp 480w, img/restoria-bottle-615.webp 615w" sizes="(min-width: 900px) 18vw, 44vw" width="480" height="849" loading="lazy" decoding="async" alt="White Restoria bottle with its label showing Calm, Restore, Sleep"><figcaption>Restoria</figcaption></figure>
+        <figure class="bottle bottle--b" data-depth="-0.1"><img src="img/b-vtan-407.webp" width="407" height="523" loading="lazy" decoding="async" alt="B Vtán bottle with a pink and white label"><figcaption>B Vtán</figcaption></figure>
+        <figure class="bottle bottle--c" data-depth="0.24"><img src="img/cinnasorg-405.webp" width="405" height="520" loading="lazy" decoding="async" alt="CinnaSorg capsule bottle"><figcaption>CinnaSorg</figcaption></figure>
+        <figure class="bottle bottle--d" data-depth="-0.18"><img src="img/stabiliphier-401.webp" width="401" height="515" loading="lazy" decoding="async" alt="Stabiliphier bottle with a black and purple label"><figcaption>Stabiliphier</figcaption></figure>
+        <figure class="bottle bottle--e" data-depth="0.08"><img src="img/cleanser-109-425.webp" width="425" height="545" loading="lazy" decoding="async" alt="Cleanser 109 Mixture bottle with a yellow label"><figcaption>Cleanser 109 Mixture</figcaption></figure>
+        <figure class="bottle bottle--f" data-depth="-0.06"><img src="img/ferrumeje-397.webp" width="397" height="509" loading="lazy" decoding="async" alt="Ferruméjè capsule bottle"><figcaption>Ferruméjè</figcaption></figure>
+        <figure class="bottle bottle--g" data-depth="0.2"><img src="img/diabeti-green-446.webp" width="446" height="572" loading="lazy" decoding="async" alt="Diabeti-Green capsule bottle"><figcaption>Diabeti-Green</figcaption></figure>
+      </div>
+      <p class="range__also">Also in the range: ALΣ and Ẹjẹlólò.</p>
+    </section>
+
+    <section class="director" id="director" data-nav="paper" aria-labelledby="director-title">
+      <img class="director__photo" src="img/medical-director-360.webp" width="360" height="640" loading="lazy" decoding="async" alt="Dr. Ifábùkúnmi O. Adéwálé in a green and white outfit and white cap, standing by a tree">
+      <div class="director__text">
+        <h2 id="director-title">Dr. Ifábùkúnmi O. Adéwálé</h2>
+        <p class="director__role">Medical director of Adewura Natural Medical Centre in Lagos, Nigeria, and Adewura Natural Remedies in the United States.</p>
+        <p>He comes from an extensive line of healers and trained under his father and uncle. He earned a Bachelor of Science in biology with special honors at the University of Lagos, trained as a biosystemic plant taxonomist and did postgraduate research in pharmacognosy.</p>
+        <p>His botanical garden holds over one thousand plant species and is a teaching site for ethnobotany students.</p>
+      </div>
+    </section>
+
+    <section class="closing" id="contact" data-nav="forest" aria-labelledby="closing-title">
+      <h2 id="closing-title">Start with Restoria</h2>
+      <div class="closing__actions">
+        <a class="pill pill--mint pill--arrow" href="mailto:adewuranatural@gmail.com?subject=Order%20Restoria">Order Restoria <span class="pill__dot" aria-hidden="true"></span></a>
+        <a class="pill pill--mint-ghost" href="mailto:adewuranatural@gmail.com">Ask a question</a>
+      </div>
+      <dl class="closing__contact">
+        <div><dt>Email</dt><dd><a href="mailto:adewuranatural@gmail.com">adewuranatural@gmail.com</a></dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+16783736836">+1 678 373 6836</a><br><a href="tel:+19806777792">+1 980 677 7792</a></dd></div>
+        <div><dt>Mail</dt><dd>P.O. Box 249, Grayson, GA 30017</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Adewura Natural Medical Centre</p>
+    <p class="foot__note">Product statements are from the client's existing site and are under review. Prototype for client review.</p>
+  </footer>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>

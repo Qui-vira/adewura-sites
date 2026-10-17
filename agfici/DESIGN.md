@@ -15,7 +15,7 @@ A sunlit field on a butter-yellow page. The maize cob is the hero object. Soil d
 | --butter | #F7F290 | Hero ground, opening ground |
 | --maize | #E8B931 | Initiatives panel |
 | --cream | #FEFAF1 | Field section, reading surfaces |
-| --leaf | #5E7F2E | Closing panel, large type only on it |
+| --leaf | #57772B | Closing panel. Cream text on it passes at 4.9:1 |
 | --ink | #29291F | Body text |
 | --olive | #403F2B | Headlines on butter (9.2:1) |
 | --soil | #7A5A36 | Dust particles, small details |

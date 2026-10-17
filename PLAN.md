@@ -132,7 +132,7 @@ Who it's for: donors, partners and volunteers deciding whether to support farmin
 | butter | #F7F290 | hero ground, the signature | olive on butter 9.2:1 |
 | maize | #E8B931 | second full-bleed section | ink on maize 8.0:1 |
 | cream | #FEFAF1 | reading sections, cards | ink on cream 14.1:1 |
-| leaf | #5E7F2E | one full-bleed section, big headlines only | cream on leaf 4.4:1, large text only |
+| leaf | #57772B | one full-bleed section | cream on leaf 4.9:1 |
 | ink | #29291F | body text | |
 | olive | #403F2B | headlines on butter (tone-on-tone) | |
 
