@@ -6,7 +6,7 @@ Decisions made by you (17 Oct 2026):
 
 - Option 2: three separate identities. Nothing visibly connects the sites.
 - The design reference is your Instagram reel (instagram.com/reel/DbgjytGySiQ, by suryaxtech). The website references I suggested are rejected.
-- The loading reference is how museum.unesco.org loads (section 2). You liked it. Details pending.
+- The opening reference is how museum.unesco.org loads (section 2), from your screen recording.
 - Static HTML. One WebGL 3D hero per site, CSS depth everywhere else.
 - Presentation prototypes. No payments yet, no Wix.
 - One repo, `adewura-sites`, one folder per site. Private preview links on Vercel or Netlify.
@@ -38,13 +38,60 @@ The reel shows a product site for Hungry Tiger Tikka Masala, scrolled on a lapto
 What we leave out: the black "WHAT'S INSIDE" panel (your rule bans black), and any neon glow.
 
 
-## 2. The loading moment (OPEN)
+## 2. The opening, from the UNESCO museum site
 
-You like how museum.unesco.org loads. I could not record it: the site sits behind a Cloudflare bot check that blocks automated browsers, and neither the studio's write-up (makemepulse) nor its Awwwards page describes the intro. Awwwards lists its palette as warm cream #F7EBDB and #E5D6C7.
+You sent a screen recording of museum.unesco.org. Frame sheets are in `research/reference-unesco/`. The recording has sound. I can't listen to audio, so the sound design is still yours to describe.
 
-What I need from you: a screen recording of the first 10 seconds on your phone or laptop, or a few words on what you liked (the first thing you see, how the 3D arrives, the colors, the sound). Then each site gets its own version of that opening, in its own colors, leading into the reel's hero.
+### What UNESCO does
 
-Constraint either way: no percentage counter, and the first screen shows something real in under 2 seconds on a phone.
+| Time | What happens | What we take |
+|---|---|---|
+| 0 to 3 s | Plain cream screen. The logo sits in the middle, then slides up into the header. | Logo-first opening |
+| 3 to 9 s | "loading" splits into "load ___ ing". Solid dark-brown icons of collection objects pop into the gap and swap about every half second (helmet, portrait, book, drum, sprout, shrine, stool, column). The gap closes, the letters ripple back together, then scatter into dots. A brushstroke spinner turns below. | The split-word loader with the brand's own objects |
+| 9 to 18 s | Fades into soft painted clouds in cream and blush. A glass globe floats in the middle. Two-tone title (dark plus rose), one dark pill button, a sound toggle. | A calm welcome scene, two-tone title |
+| 20 to 23 s | One sentence: "Cultural objects carry the stories of their communities." Dust blows across the words. "Scroll to explore" cue. | One sentence, with particles that belong to the brand |
+| 23 to 32 s | On scroll, the camera pushes through the clouds, dives over a forest, flashes white, and lands inside the 3D building. | The dive that hands over to the 3D hero |
+| Between rooms | A "Did you know?" card with a real fact shows while the next room loads. | A fact card instead of a blank wait |
+
+### How each site opens (APPROVE)
+
+The opening comes first. Then the reel's pinned 3D object takes over (section 1).
+
+AGFICI, on butter yellow:
+1. Logo in the middle, slides into the header.
+2. "load ___ ing" in Archivo, olive. Icons swapping in the gap: maize cob, hoe, garri sack, seedling, goat, basket, tractor wheel.
+3. One sentence from the client's copy, "From sustainable farms to empowered futures." Soil dust blows across it.
+4. The dust settles into the field and the maize cob rises out of it. The reel's sequence starts.
+
+Adewura Natural, on forest green:
+1. Logo in the middle, slides into the header.
+2. "load ___ ing" in Young Serif, mint. Icons: hibiscus flower, peperomia leaf, capsule, mortar and pestle, bottle, leaf, drop.
+3. One sentence: "Rest is not a luxury." It's built from the Restoria page line "Modern life has made rest feel like a luxury instead of a necessity." Hibiscus petals drift across it.
+4. The petals part and the Restoria bottle rises through them.
+
+Ilé Àtègbè, on amber:
+1. Logo in the middle, slides into the header.
+2. "load ___ ing" in Cormorant Garamond, indigo. Icons: the crown, the ọpọ́n Ifá tray, the òpèlè chain, a cowrie shell, a drum, the irùkẹ̀rẹ̀ whisk, a bead strand.
+3. One sentence: "Ilé means house. Àtègbè means stepping into greatness." It comes from the client's history page. Instead of dust, divination powder (ìyẹ̀rọ̀sùn, the powder spread on the Ifá tray; client to confirm spelling and color) drifts across the words.
+4. The powder settles and the crown rises out of it.
+5. CLIENT: these icons and the powder are sacred. The client approves each one before anything goes public.
+
+### Rules for the opening
+
+- The loader lasts only as long as the page really takes to load. It shows at least three icons (about 1.5 s), then gets out of the way. A returning visitor in the same browser session skips it.
+- No percentage counter.
+- The page text is in the HTML from the start, so search engines and screen readers never wait for the loader.
+- Fact cards show only while something is actually loading, with real facts from the client's copy, for example "Restoria has 350 mg of botanicals per capsule" or "AGFICI grows corn, cashew, teak, bamboo and African walnut."
+- Sound: decided in section 2a.
+
+### 2a. Sound and the welcome button (OPEN)
+
+UNESCO has a sound toggle and a "Visit now" button before the experience starts. Browsers only allow sound after a visitor taps something, which is why sites like this put a button first. The trade-off: a button before the content costs some visitors, especially on slow phones. Your call:
+
+- Option A: no button. The site starts silent with a small sound toggle in the corner.
+- Option B: an "Enter" button after the loader, which also switches on sound. This is closer to UNESCO's feel.
+
+The ElevenLabs voiceover could live here later: one short spoken line per brand in the welcome scene.
 
 
 ## 3. How the 3D gets built (APPROVE)
@@ -222,9 +269,9 @@ No shared visual code, since the identities are separate. Build tools (image res
 
 ## 9. Build order
 
-1. You approve the colors, type and homepage beats in this file, and send the UNESCO loading recording or description.
+1. You approve the colors, type, openings and homepage beats in this file, and pick Option A or B for sound.
 2. Impeccable's direction step turns each approved brand into a DESIGN.md, with the reel as the binding reference.
-3. One 3D hero prototype per site with the ghost-trail headlines and the loading moment. You see the object turn on scroll before any page gets built around it.
+3. One 3D hero prototype per site with the opening, the ghost-trail headlines and the object turning on scroll. You see the object turn on scroll before any page gets built around it.
 4. Homepages, then the inner pages.
 5. Checks: impeccable's design detector, screenshots on desktop and phone, page speed, the Yoruba render test, reduced motion.
 6. Preview links, one per site.
