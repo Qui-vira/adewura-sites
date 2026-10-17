@@ -1,39 +1,35 @@
 Hi [Client name],
 
-Before we start the redesign, I need one decision from you.
+Before we start the redesign, here is how I plan to handle the three websites, and why.
 
-Right now you have three websites:
+Right now you have three sites:
 
-- AGFICI (adewuragfici.com), the farming nonprofit. Restoria is one of its projects.
+- AGFICI (adewuragfici.com), the farming nonprofit.
 - Adewura Natural (adewuranatural.com), the herbal medical centre and its products.
 - Ilé Àtègbè (ileategbe.org), the Ifá and Òrìṣà house.
 
-Today they look like three unrelated businesses. Each one uses different fonts, different colors and a different layout. A visitor who lands on two of them has no way to tell they come from the same family.
+My recommendation: three separate identities.
 
-So the question is: how should the three relate after the rebrand? There are three ways to do it.
+Each site gets its own look, made from scratch for what it does. Its own colors, its own fonts, its own feel. Nothing visibly connects them.
 
-Option 1. One family, three colors.
-All three sites share the same fonts, the same layout style and the same kind of movement. Each keeps its own color and its own logo. Moving from one site to another feels like walking into different rooms of the same house.
-Good for: trust carries from one brand to the others. Faster to build and cheaper to keep up.
-Trade-off: people will see the three are related. If any of them needs to stay apart in the public eye, this isn't the right choice.
+Why this works for you:
 
-Option 2. Three separate identities.
-Each site gets its own look from scratch. Nothing visibly connects them.
-Good for: keeping the farming work, the medical work and the spiritual work fully separate.
-Trade-off: three designs to create and maintain, so more time and more cost.
+- Farming, medicine and spiritual work speak to different people. A donor for the farm, a customer for a sleep remedy and a seeker for divination each want a site that feels made for them.
+- The Ilé Àtègbè homepage already says the spiritual content moved off adewuranatural.com so each site could focus on its own audience. This keeps that separation.
+- Health products face strict advertising rules. Keeping the medical brand apart keeps those rules from touching the other two.
 
-Option 3. One parent brand with three branches.
-A parent name, for example "Adewura", sits on top. AGFICI, Adewura Natural and Ilé Àtègbè appear under it as branches, and each site points to the other two.
-Good for: showing the full scale of what the family has built.
-Trade-off: this changes how each organization presents itself, so the people who run each one should agree first.
+The trade-off: three designs take more time than one shared design. I think the result is worth it.
 
-My recommendation is Option 1. The Ilé Àtègbè homepage says it was split from adewuranatural.com so each site could speak to its own audience. Option 1 keeps that separation in the content while giving all three the same build quality.
+Each site will open with one object that turns in 3D as you scroll:
 
-Please reply with 1, 2 or 3. If you're unsure, a short call works too.
+- AGFICI: a maize cob.
+- Adewura Natural: the Restoria bottle.
+- Ilé Àtègbè: the beaded Àtègbè crown.
 
-Two quick things to confirm at the same time:
+A few things I need from you:
 
-1. Do we keep the current logos, or design new ones as part of the rebrand?
-2. Should the three sites link to each other, or stay unlinked?
+1. Are you happy with three separate identities?
+2. Do we keep the current logos, or design new ones?
+3. Are you comfortable with the Àtègbè crown being shown in 3D on the website?
 
 Thank you.

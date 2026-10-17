@@ -26,12 +26,13 @@ Site visitors differ per brand. See each site's PRODUCT.md.
 
 ## Positioning
 
-Three separate identities. Each site gets its own look from scratch and nothing visibly connects them. Chosen by the designer on 17 Oct 2026 to keep the farming, medical and spiritual work apart in the public eye. A note asking the client to confirm is in `research/client-note-brand-family.md`.
+Three separate identities (Option 2). Each site gets its own look from scratch and nothing visibly connects them. Final decision by the designer on 17 Oct 2026, to keep the farming, medical and spiritual work apart in the public eye. The client note in `research/client-note-brand-family.md` recommends this option.
 
 ## Capabilities and Constraints
 
 - Light or bright brand-color page grounds only. Banned: the generic AI look of neon glow on black or near-black. Bright saturated brand-color sections are allowed.
-- Each homepage hero is one brand-specific 3D object that turns with scroll, while big headlines change behind it. Designer's reference: Instagram reel DbgjytGySiQ by suryaxtech (a Tikka Masala jar site). Frames in `research/reference-reel/`.
+- Each homepage hero is one brand-specific 3D object that turns with scroll, while big headlines change behind it.
+- The design reference is the designer's Instagram reel DbgjytGySiQ by suryaxtech (a Tikka Masala jar site), frames in `research/reference-reel/`. The loading reference is museum.unesco.org, which the designer likes. The designer rejected other website references on 17 Oct 2026. Do not propose more unless asked.
 - Scope per site: full homepage plus 3 to 4 key inner pages.
 - Yoruba text must render correctly: ẹ ọ ṣ with tone marks (à á è é ì í ò ó ù ú ń ǹ). Every font must pass `research/fonts/check.py`.
 - Copy: clean up, keep meaning. Fix typos, cut repeats, remove spam, Lorem ipsum and template text. No new claims.
