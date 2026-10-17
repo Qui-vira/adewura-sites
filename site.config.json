@@ -19,6 +19,38 @@
     {
       "path": "/farmers/",
       "priority": 0.9
+    },
+    {
+      "path": "/natural/restoria/",
+      "priority": 0.7
+    },
+    {
+      "path": "/natural/products/",
+      "priority": 0.7
+    },
+    {
+      "path": "/natural/about/",
+      "priority": 0.7
+    },
+    {
+      "path": "/natural/contact/",
+      "priority": 0.7
+    },
+    {
+      "path": "/ategbe/history/",
+      "priority": 0.7
+    },
+    {
+      "path": "/ategbe/custodian/",
+      "priority": 0.7
+    },
+    {
+      "path": "/ategbe/services/",
+      "priority": 0.7
+    },
+    {
+      "path": "/ategbe/learn/",
+      "priority": 0.7
     }
   ],
   "whatsapp": {
@@ -31,22 +63,33 @@
     }
   },
   "redirects": {
-    "_note": "Old domains forward to the new pages for 6 to 12 months. Works only once each old domain is added to the Netlify site as a domain alias. adewuranatural.com lists only its real pages, so the spam pages left by the hack return 404 instead of being forwarded.",
+    "_note": "Old domains forward to the new pages for 6 to 12 months. Works only once each old domain is added to the Netlify site as a domain alias. \"paths\" maps each old page to its new page (a list sends them all to \"to\"); \"catchAll\" sends every other old page to \"to\". adewuranatural.com has no catch-all, so the spam pages left by the hack return 404 instead of being forwarded.",
     "adewuranatural.com": {
-      "paths": [
-        "/",
-        "/about",
-        "/products",
-        "/restoria",
-        "/ale",
-        "/b-vtan",
-        "/contact"
-      ],
+      "paths": {
+        "/": "/natural/",
+        "/about": "/natural/about/",
+        "/products": "/natural/products/",
+        "/restoria": "/natural/restoria/",
+        "/ale": "/natural/products/",
+        "/b-vtan": "/natural/products/",
+        "/contact": "/natural/contact/"
+      },
       "catchAll": false,
       "to": "/natural/"
     },
     "ileategbe.org": {
-      "paths": [],
+      "paths": {
+        "/our-history": "/ategbe/history/",
+        "/our-custodian": "/ategbe/custodian/",
+        "/services": "/ategbe/services/",
+        "/ifa-divination": "/ategbe/services/",
+        "/akose": "/ategbe/services/",
+        "/16-major-odu-ifa": "/ategbe/learn/",
+        "/iwure-prayers": "/ategbe/learn/",
+        "/classes": "/ategbe/learn/",
+        "/education": "/ategbe/learn/",
+        "/prayer-calendar": "/ategbe/learn/"
+      },
       "catchAll": true,
       "to": "/ategbe/"
     },

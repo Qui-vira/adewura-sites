@@ -75,3 +75,6 @@ AGFICI (adewuragfici.com) is not touched.
 - Approval of the Àtègbè crown, icons and divination powder
 - Confirmation of Natural's phone numbers and the Restoria price
 - Review of the Aristolochia (Akoogun) safety note on two Natural products
+- Natural inner pages: confirm the Stabiliphier description (the old site repeats an older ÀLÈ listing), the FDA supplement disclaimer wording, and the safety note wording on Cleanser 109 Mixture and Ẹjẹlólò
+- Àtègbè inner pages: review the prayer spellings on the Learn page (copied as published, marked as awaiting review), and confirm "Cleanser 109 Mixture" on the Custodian page
+- Trust Fund inner pages: the old site's About, Programs, Corn field, Livestock and Contact pages (blocked to our downloads by Cloudflare; the designer is saving them)

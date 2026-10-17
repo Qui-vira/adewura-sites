@@ -555,3 +555,204 @@ em { font-style: italic; }
   .welcome__lede, .welcome__logo { display: none; }
   .welcome__actions { margin-top: 0.25rem; }
 }
+
+/* ---------- Inner pages: calm, typographic, no stage ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* the nav sits on a solid ivory band, since inner pages have no stage behind it */
+.nav--solid { background: rgb(255 248 232 / 0.95); }
+@supports (backdrop-filter: blur(1px)) {
+  .nav--solid { background: rgb(255 248 232 / 0.86); backdrop-filter: blur(10px); }
+}
+.nav--solid .nav__left { gap: 1.25rem; }
+.navlink[aria-current='page'] { text-decoration-color: currentColor; }
+/* five links crowd the centred wordmark on mid-size screens; the footer still links the parent */
+@media (max-width: 1240px) { .navlink--parent { display: none; } }
+/* below 900px the four page links would touch the wordmark: the footer carries them instead */
+@media (max-width: 900px) {
+  .nav { grid-template-columns: auto 1fr; }
+  .nav__left { display: none; }
+}
+
+.inner main { background: var(--ivory); }
+
+.phead {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: start;
+  padding: calc(var(--nav-h) + clamp(4rem, 10vw, 8rem)) var(--gutter) clamp(3.5rem, 8vw, 6rem);
+  background: var(--beads), var(--amber);
+}
+.phead h1 {
+  max-width: 14ch;
+  font: 500 clamp(3.2rem, 9vw, 8.5rem)/0.92 var(--display);
+  letter-spacing: -0.01em;
+  color: var(--indigo);
+}
+.phead .rule { width: min(20rem, 60%); }
+.phead__lede { max-width: 44ch; font-size: clamp(1.0625rem, 1.6vw, 1.3125rem); }
+
+.prose {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+  padding: clamp(4rem, 9vw, 7rem) var(--gutter) 0;
+}
+.prose:last-of-type { padding-bottom: clamp(4rem, 9vw, 7rem); }
+.prose--wide { grid-template-columns: 1fr; }
+.prose--lead { grid-template-columns: auto minmax(0, 1fr); align-items: center; }
+.prose__col { display: grid; gap: 1rem; max-width: 62ch; }
+.prose h2 {
+  margin-bottom: 0.5rem;
+  font: 500 clamp(2.3rem, 5vw, 4.25rem)/0.98 var(--display);
+  color: var(--indigo);
+}
+.prose h3 {
+  margin-top: 1rem;
+  font: 600 clamp(1.5rem, 2.4vw, 2rem)/1.1 var(--display);
+  color: var(--indigo);
+}
+.prose__figure { margin: 0; }
+.prose__figure img { box-shadow: 0 1.75rem 3rem -1.5rem rgb(90 42 14 / 0.45), 0 0.3rem 0.8rem rgb(90 42 14 / 0.12); }
+.prose__figure--archive img { padding: 0.5rem; background: #fff; }
+.prose__figure--portrait { width: min(361px, 80vw); }
+.prose figcaption {
+  margin-top: 0.7rem;
+  font: italic 400 0.875rem/1.4 var(--body);
+  color: var(--gold-text);
+}
+.prose .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; }
+
+/* a reign: its number set large in gold beside the text */
+.prose--reign { grid-template-columns: 5rem minmax(0, 1.15fr) minmax(0, 0.7fr); }
+.reign__mark {
+  font: 500 clamp(2.5rem, 5vw, 4rem)/1 var(--display);
+  color: var(--gold-text);
+  border-top: 5px double var(--gold);
+  padding-top: 0.75rem;
+}
+
+.fn {
+  margin-left: 0.15em;
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--laterite);
+}
+.notes {
+  margin: clamp(3rem, 6vw, 5rem) var(--gutter) 0;
+  padding: 1.25rem 0 clamp(4rem, 8vw, 6rem);
+  border-top: 1px solid rgb(90 42 14 / 0.2);
+  max-width: 62ch;
+  font-size: 0.9375rem;
+  color: var(--umber);
+}
+.notes a { margin-right: 0.4rem; color: var(--laterite); }
+
+/* books and lectures */
+.lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: clamp(4rem, 9vw, 7rem) var(--gutter);
+}
+.lists h2 { font: 500 clamp(2rem, 4vw, 3.25rem)/1 var(--display); color: var(--indigo); margin-bottom: 1.25rem; }
+.list { list-style: none; margin: 0; padding: 0; }
+.list li {
+  padding: 0.9rem 0;
+  border-top: 1px solid rgb(90 42 14 / 0.2);
+  font: italic 400 1.0625rem/1.45 var(--body);
+}
+.list li:last-child { border-bottom: 1px solid rgb(90 42 14 / 0.2); }
+
+/* services: the homepage's laterite list, on its own page */
+.offer {
+  padding: clamp(4rem, 9vw, 7rem) var(--gutter);
+  background: var(--laterite);
+  color: var(--ivory);
+}
+.offer__list { list-style: none; margin: 0; padding: 0; max-width: 60rem; }
+.offer__list li {
+  display: grid;
+  gap: 0.35rem;
+  padding: clamp(1.1rem, 2.2vw, 1.75rem) 0;
+  border-top: 1px solid rgb(255 248 232 / 0.35);
+}
+.offer__list li:last-child { border-bottom: 1px solid rgb(255 248 232 / 0.35); }
+.offer__list strong { font: 500 clamp(1.9rem, 3.6vw, 3.25rem)/1.05 var(--display); }
+.offer__list li > span { color: #ffe2b0; font-size: 0.9375rem; }
+
+/* prayers: the Yorùbá and its English side by side, line for line */
+.prayers { display: grid; gap: clamp(2.5rem, 5vw, 4rem); margin-top: 2rem; }
+.prayer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding-top: 1.5rem;
+  border-top: 5px double var(--gold);
+}
+.prayer h3 { margin: 0 0 0.9rem; font-size: clamp(1.4rem, 2vw, 1.75rem); }
+.verse { line-height: 1.75; }
+.verse[lang='yo'] { font: 500 1.125rem/1.75 var(--display); color: var(--ink); }
+.note { margin-top: 2rem; font-style: italic; font-size: 0.9375rem; color: var(--umber); }
+
+/* the 16 major Odù */
+.odus {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin: 2.5rem 0;
+}
+.odu {
+  position: relative;
+  padding: 2rem clamp(1.25rem, 2.5vw, 2rem) 2rem;
+  background: #fff;
+  border-top: 5px double var(--gold);
+  box-shadow: 0 1.25rem 2.5rem -1.75rem rgb(90 42 14 / 0.35);
+}
+.odu__n {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  font: 500 2.5rem/1 var(--display);
+  color: var(--gold);
+}
+.odu h3 { font: 600 clamp(1.9rem, 3vw, 2.5rem)/1 var(--display); color: var(--indigo); padding-right: 3rem; }
+.odu__place { margin-top: 0.5rem; font-style: italic; color: var(--gold-text); }
+.odu dl { display: grid; gap: 0.35rem; margin: 1.25rem 0 0; }
+.odu dt {
+  margin-top: 0.85rem;
+  font: 600 0.8125rem/1.3 var(--body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--laterite);
+}
+.odu dd { margin: 0; }
+.odu dd p + p { margin-top: 0.75rem; }
+
+/* footer page links */
+.foot__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.5rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+.foot__links a[aria-current='page'] { text-decoration-thickness: 2px; }
+
+@media (max-width: 860px) {
+  .prose, .prose--lead, .prose--reign, .lists, .prayer { grid-template-columns: 1fr; }
+  .reign__mark { width: 4rem; }
+  .prose__figure { max-width: 30rem; }
+}

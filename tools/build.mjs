@@ -4,7 +4,7 @@
 // canonical and Open Graph tags, the parent name, booking links, and whether search engines
 // may index the site. Writes robots.txt and sitemap.xml.
 import * as esbuild from 'esbuild';
-import { existsSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, rmSync, readdirSync } from 'node:fs';
 
 const config = JSON.parse(readFileSync('site.config.json', 'utf8'));
 const watch = process.argv.includes('--watch');
@@ -43,9 +43,23 @@ const ctx = await esbuild.context({
 const setMarked = (html, attr, value) =>
   html.replace(new RegExp(`(<([a-z0-9]+)[^>]*\\s${attr}(?:=""|)[^>]*>)([^<]*)(</\\2>)`, 'gi'), (_, open, _t, _old, close) => open + value + close);
 
+// every page that gets the config: the bundled pages, plus each brand's inner pages
+// (site/<brand>/<page>/index.html), which need no script of their own
+function htmlPages() {
+  const dirs = pages.map((p) => p.dir);
+  for (const p of pages) {
+    if (!p.dir) continue;
+    for (const d of readdirSync(`site/${p.dir}`, { withFileTypes: true })) {
+      if (d.isDirectory() && existsSync(`site/${p.dir}${d.name}/index.html`)) dirs.push(`${p.dir}${d.name}/`);
+    }
+  }
+  return dirs.map((dir) => ({ dir }));
+}
+
 function applyConfig() {
   const base = config.siteUrl.replace(/\/$/, '');
-  for (const p of pages) {
+  const hosts = new Set([new URL(config.siteUrl).host, 'adewura-preview.netlify.app']);
+  for (const p of htmlPages()) {
     const file = `site/${p.dir}index.html`;
     if (!existsSync(file)) continue;
     let html = readFileSync(file, 'utf8');
@@ -71,8 +85,8 @@ function applyConfig() {
     const digits = (wa?.number || '').replace(/\D/g, '');
     html = html.replace(/(<a\b[^>]*\sdata-booking="(\w+)"[^>]*\shref=")([^"]*)(")/g, (m, a, brand, old, b) =>
       digits ? `${a}https://wa.me/${digits}?text=${encodeURIComponent(wa.messages?.[brand] || '')}${b}` : m);
-    // JSON-LD url fields point at the configured address
-    html = html.replace(/"url": "https?:\/\/[^"]*?(\/(?:natural\/|ategbe\/|farmers\/)?)"/g, (_, path) => `"url": "${base}${path}"`);
+    // JSON-LD url fields on this site point at the configured address
+    html = html.replace(/"url": "https?:\/\/([^/"]+)(\/[^"]*)?"/g, (m, host, path = '/') => (hosts.has(host) ? `"url": "${base}${path}"` : m));
     writeFileSync(file, html);
   }
   writeFileSync('site/robots.txt', config.indexable
@@ -84,8 +98,10 @@ function applyConfig() {
     if (domain.startsWith('_')) continue;
     for (const host of [domain, `www.${domain}`]) {
       for (const scheme of ['https', 'http']) {
-        for (const path of rule.paths) {
-          for (const variant of path === '/' ? ['/'] : [path, `${path}/`]) lines.push(`${scheme}://${host}${variant}  ${base}${rule.to}  301!`);
+        // a list sends every path to rule.to; a map sends each old page to its own new page
+        const map = Array.isArray(rule.paths) ? Object.fromEntries(rule.paths.map((path) => [path, rule.to])) : rule.paths;
+        for (const [path, to] of Object.entries(map)) {
+          for (const variant of path === '/' ? ['/'] : [path, `${path}/`]) lines.push(`${scheme}://${host}${variant}  ${base}${to}  301!`);
         }
         if (rule.catchAll) lines.push(`${scheme}://${host}/*  ${base}${rule.to}  301!`);
       }
