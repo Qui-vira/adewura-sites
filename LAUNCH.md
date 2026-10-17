@@ -5,11 +5,11 @@ Everything the client and the designer must do to move from the preview to the r
 All settings live in one file, `site.config.json`. After changing it, run `npm run build`, commit and push. Netlify updates the site in about 30 seconds.
 
 
-## 1. Name the parent company (client)
+## 1. Parent company name (done)
 
-- The site uses the working name "Adewura" everywhere the parent name appears.
-- When the client chooses the real name, change `"parentName"` in `site.config.json`. Every visible mention updates on the next build.
-- Also edit by hand: the `<title>`, `og:title` and the structured-data `"name"` in `site/index.html`, and the `parentOrganization` name in each brand's `index.html`. These are search-engine fields the build does not rewrite yet.
+- The parent is "Adewura Group" (17 Oct 2026, matching the suggested domain adewuragroup.com).
+- To change it, edit `"parentName"` in `site.config.json` and rebuild. The build updates every visible mention, the page title, the share title and the structured data on all four pages.
+- The share image `site/img/og-parent.jpg` carries the name as a picture and must be re-rendered by hand.
 
 
 ## 2. Buy the new domain (client)
@@ -69,9 +69,7 @@ AGFICI (adewuragfici.com) is not touched.
 
 ## Still needed from the client
 
-- Parent company name
 - Domain purchase (adewuragroup.com suggested, not confirmed)
-- If the parent is named after the domain, "Adewura Group" replaces the working name "Adewura"
 - Confirm +1 678 373 6836 is the right WhatsApp number for Book a call
 - Program details for the Trust Fund
 - Approval of the Àtègbè crown, icons and divination powder

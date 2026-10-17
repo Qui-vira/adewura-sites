@@ -8,7 +8,7 @@ This section overrides anything below that disagrees with it.
 - The three brands are now: Adewura Natural (medical), Ilé Àtègbè (spiritual), Adewura Giant Farmers Trust Fund (farming).
 - Option 3: one parent brand on one new domain, with the three brands under it. Each brand keeps its own identity inside the parent.
 - The parent homepage carries the full UNESCO-style opening. Choosing a brand opens that brand's own opening, with a Book a call option.
-- Parent name: the client will choose it. Built with the working name "Adewura" in one config file, so the swap is one edit.
+- Parent name: "Adewura Group" (17 Oct 2026). Set in one config file, so a later change is one edit.
 - Book a call: WhatsApp, one number for all three brands, with a message naming the brand (client, 17 Oct 2026). Number pending.
 - Google: Google Business Profiles for each business, and real Google reviews shown on the site once the profiles exist.
 - Old domains (adewuranatural.com, ileategbe.org, adewuragiantfarmers.org) forward to the matching new pages for 6 to 12 months, then expire. AGFICI stays untouched.

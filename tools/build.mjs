@@ -56,6 +56,15 @@ function applyConfig() {
       .replace(/(<meta property="og:image" content=")(?:https?:\/\/[^/"]+)?\/?([^"]*)(")/, `$1${base}/$2$3`)
       .replace(/(<meta name="robots" content=")[^"]*(")/, `$1${config.indexable ? 'index, follow' : 'noindex, nofollow'}$2`);
     html = setMarked(html, 'data-parent-name', config.parentName);
+    html = setMarked(html, 'data-parent-note', config.parentNameIsWorkingName ? 'Working name. Prototype for client review.' : 'Prototype for client review.');
+    // search-engine fields that carry the parent name
+    html = html.replace(/("parentOrganization": \{ "@type": "Organization", "name": ")[^"]*(")/, `$1${config.parentName}$2`);
+    if (p.dir === '') {
+      html = html
+        .replace(/(<title>)[^|<]*?( \|)/, `$1${config.parentName}$2`)
+        .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${config.parentName}$2`)
+        .replace(/("@type": "Organization",\s*"name": ")[^"]*(")/, `$1${config.parentName}$2`);
+    }
     // booking links: <a data-booking="natural" href="..."> open WhatsApp with a message naming the brand;
     // with no number set they keep their email fallback
     const wa = config.whatsapp;
