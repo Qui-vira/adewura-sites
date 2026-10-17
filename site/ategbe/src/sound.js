@@ -1,111 +1,76 @@
-// Placeholder sound for Ilé Àtègbè, synthesized with the Web Audio API until the ElevenLabs files
-// arrive. A low, slow drone (no drum kit), the swish of the bead fringe as the crown rises,
-// a single bead click on buttons and a soft bell when a headline settles.
+// Ilé Àtègbè's sound: the shared kit (../../src/soundkit.js) at its deepest. A throat-sung
+// drone on A, low bowls, plucked phrases in A minor pentatonic (A C D E G) and the shaman
+// bells more often than on the other pages. The bead fringe rustles only while the crown is
+// on screen and goes quiet the moment the visitor leaves it. Each later section opens with
+// a soft door whoosh and a bowl.
 // Nothing plays until start() runs inside the Enter click, as browsers require.
+import { createSoundKit } from '../../src/soundkit.js';
+
+const SCALE = [146.83, 164.81, 196.0, 220.0, 261.63, 293.66, 329.63, 392.0, 440.0];
 
 export function createSound() {
-  let ctx, master, swishGain, swishFilter;
-  let on = false;
+  const kit = createSoundKit({
+    scale: SCALE,
+    drone: { hz: 55, level: 0.06 },
+    bowls: [110, 146.83, 220],
+    every: { bowl: [12, 20], phrase: [9, 16], bells: [14, 26] },
+  });
+  let beadGain, beadFilter, inStage = true;
 
-  function noiseBuffer(seconds) {
-    const len = Math.floor(ctx.sampleRate * seconds);
+  // the fringe: sparse clicks rather than smooth hiss, so it reads as beads, not wind
+  function beads() {
+    const { ctx } = kit;
+    const len = Math.floor(ctx.sampleRate * 3);
     const buf = ctx.createBuffer(1, len, ctx.sampleRate);
     const d = buf.getChannelData(0);
-    // sparse clicks rather than smooth hiss, so it reads as beads, not wind
     for (let i = 0; i < len; i++) d[i] = Math.random() < 0.02 ? Math.random() * 2 - 1 : (Math.random() * 2 - 1) * 0.08;
-    return buf;
-  }
-
-  function drone() {
-    // A and E low in the register, a soft fifth above, breathing very slowly
-    const filter = ctx.createBiquadFilter();
-    filter.type = 'lowpass';
-    filter.frequency.value = 520;
-    const g = ctx.createGain();
-    g.gain.value = 0;
-    g.gain.linearRampToValueAtTime(0.07, ctx.currentTime + 6);
-    const breathe = ctx.createOscillator();
-    const depth = ctx.createGain();
-    breathe.frequency.value = 0.045;
-    depth.gain.value = 0.025;
-    breathe.connect(depth).connect(g.gain);
-    breathe.start();
-    filter.connect(g).connect(master);
-    for (const [f, type, amp] of [[55, 'sine', 0.5], [82.41, 'triangle', 0.22], [110, 'sine', 0.2], [164.81, 'sine', 0.07]]) {
-      for (const detune of [-4, 4]) {
-        const o = ctx.createOscillator();
-        o.type = type;
-        o.frequency.value = f;
-        o.detune.value = detune;
-        const v = ctx.createGain();
-        v.gain.value = amp;
-        o.connect(v).connect(filter);
-        o.start();
-      }
-    }
-  }
-
-  function bell(freq, when, level) {
-    // inharmonic partials, long gentle decay
-    const g = ctx.createGain();
-    g.gain.setValueAtTime(0, when);
-    g.gain.linearRampToValueAtTime(level, when + 0.01);
-    g.gain.exponentialRampToValueAtTime(0.0001, when + 3.2);
-    g.connect(master);
-    for (const [mult, amp] of [[1, 1], [2.76, 0.35], [5.4, 0.12]]) {
-      const o = ctx.createOscillator();
-      o.frequency.value = freq * mult;
-      const a = ctx.createGain();
-      a.gain.value = amp;
-      o.connect(a).connect(g);
-      o.start(when);
-      o.stop(when + 3.3);
-    }
-  }
-
-  function swish() {
     const src = ctx.createBufferSource();
-    src.buffer = noiseBuffer(3);
+    src.buffer = buf;
     src.loop = true;
-    swishFilter = ctx.createBiquadFilter();
-    swishFilter.type = 'bandpass';
-    swishFilter.frequency.value = 4200;
-    swishFilter.Q.value = 1.2;
-    swishGain = ctx.createGain();
-    swishGain.gain.value = 0;
-    src.connect(swishFilter).connect(swishGain).connect(master);
+    beadFilter = ctx.createBiquadFilter();
+    beadFilter.type = 'bandpass';
+    beadFilter.frequency.value = 4200;
+    beadFilter.Q.value = 1.2;
+    beadGain = ctx.createGain();
+    beadGain.gain.value = 0;
+    src.connect(beadFilter).connect(beadGain);
+    kit.out(beadGain, { reverb: false });
     src.start();
   }
 
   return {
-    get on() { return on; },
+    get on() { return kit.on; },
     start() {
-      if (!ctx) {
-        ctx = new (window.AudioContext || window.webkitAudioContext)();
-        master = ctx.createGain();
-        master.gain.value = 0.9;
-        master.connect(ctx.destination);
-        drone();
-        swish();
-      }
-      ctx.resume();
-      on = true;
-      master.gain.setTargetAtTime(0.9, ctx.currentTime, 0.6);
+      kit.start();
+      if (!beadGain) beads();
+      kit.later(() => kit.bowl(110, 0.06), 600);
     },
     stop() {
-      if (!ctx) return;
-      on = false;
-      master.gain.setTargetAtTime(0, ctx.currentTime, 0.3);
+      if (beadGain) beadGain.gain.setTargetAtTime(0, kit.ctx.currentTime, 0.05);
+      kit.stop();
     },
-    // amount 0..1: how fast the fringe is moving
+    // amount 0..1: how fast the fringe is moving; silent once the crown is left behind
     swish(amount) {
-      if (!ctx || !on) return;
-      swishGain.gain.setTargetAtTime(Math.min(amount, 1) * 0.5, ctx.currentTime, 0.08);
-      swishFilter.frequency.setTargetAtTime(3400 + amount * 1800, ctx.currentTime, 0.15);
+      if (!kit.on || !beadGain) return;
+      const v = inStage ? Math.min(amount, 1) : 0;
+      beadGain.gain.setTargetAtTime(v * 0.5, kit.ctx.currentTime, 0.08);
+      beadFilter.frequency.setTargetAtTime(3400 + v * 1800, kit.ctx.currentTime, 0.15);
+    },
+    // the crown's section is on screen or not
+    stage(active) {
+      inStage = active;
+      if (!active && beadGain) beadGain.gain.setTargetAtTime(0, kit.ctx.currentTime, 0.06);
+      if (!active) kit.scroll(0);
+    },
+    // a new section comes into view: a door opens
+    section(i) {
+      kit.whoosh(0.32, 2.2, 0.18);
+      kit.later(() => kit.bowl([146.83, 110, 196.0, 220][i % 4], 0.045), 900);
     },
     // a single bead touching another
     tap() {
-      if (!ctx || !on) return;
+      const { ctx } = kit;
+      if (!ctx || !kit.on) return;
       const t = ctx.currentTime;
       const o = ctx.createOscillator();
       o.frequency.setValueAtTime(3100, t);
@@ -113,13 +78,15 @@ export function createSound() {
       const g = ctx.createGain();
       g.gain.setValueAtTime(0.12, t);
       g.gain.exponentialRampToValueAtTime(0.0001, t + 0.05);
-      o.connect(g).connect(master);
+      o.connect(g);
+      kit.out(g, { reverb: false });
       o.start(t);
       o.stop(t + 0.06);
     },
+    // a headline settles: a bowl and a few bells
     chime() {
-      if (!ctx || !on) return;
-      bell(392, ctx.currentTime, 0.05);
+      kit.bowl(220, 0.04);
+      kit.jingle(0.22, 3, 9);
     },
   };
 }

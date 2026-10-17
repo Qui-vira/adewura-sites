@@ -117,8 +117,24 @@ ScrollTrigger.create({
   onUpdate: (self) => setProgress(self.progress),
   onToggle: (self) => {
     stageActive = self.isActive;
+    sound.stage(self.isActive);
     if (self.isActive) { scene?.start(); petals.start(); } else { scene?.stop(); petals.stop(); }
   },
+});
+
+// each section after the stage opens like a door as it reaches the middle of the screen
+let lastDoor = 0;
+document.querySelectorAll('main > section:not(.stage)').forEach((el, i) => {
+  ScrollTrigger.create({
+    trigger: el,
+    start: 'top 55%',
+    end: 'bottom 45%',
+    onToggle: (self) => {
+      if (!self.isActive || performance.now() - lastDoor < 1500) return;
+      lastDoor = performance.now();
+      sound.section(i);
+    },
+  });
 });
 setProgress(0);
 petals.start();

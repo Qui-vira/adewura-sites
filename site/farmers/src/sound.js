@@ -1,140 +1,66 @@
-// Placeholder sound, synthesized with the Web Audio API until the ElevenLabs files arrive.
-// Three layers, following the UNESCO reference: a calm bed, a whoosh on the dive, soft taps.
+// The Trust Fund's sound: the shared kit (../../src/soundkit.js) in daylight. A faint drone on
+// C, plucked phrases in C major pentatonic (C D E G A) played more often, wind through the
+// maize as the visitor scrolls past the cob, birds now and then, bowls and bells rarely.
+// Each later section opens with a soft door whoosh and a pluck.
 // Nothing plays until start() runs inside the Enter click, as browsers require.
+import { createSoundKit } from '../../src/soundkit.js';
 
-const PENTATONIC = [261.63, 293.66, 329.63, 392.0, 440.0, 523.25, 587.33]; // C major pentatonic
+const SCALE = [261.63, 293.66, 329.63, 392.0, 440.0, 523.25, 587.33, 659.25];
 
 export function createSound() {
-  let ctx, master, windGain, windFilter, pluckTimer;
-  let on = false;
+  const kit = createSoundKit({
+    scale: SCALE,
+    drone: { hz: 65.41, level: 0.025 },
+    bowls: [196.0, 261.63],
+    every: { bowl: [24, 40], phrase: [5, 10], bells: [30, 55] },
+    wind: { level: 0.6, low: 420, high: 2400 },
+  });
 
-  function noiseBuffer(seconds) {
-    const len = Math.floor(ctx.sampleRate * seconds);
-    const buf = ctx.createBuffer(1, len, ctx.sampleRate);
-    const d = buf.getChannelData(0);
-    for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
-    return buf;
-  }
-
-  function pad() {
-    // Warm held chord: C3 G3 E4 D5, two slightly detuned voices each, through a slow-moving low-pass
-    const filter = ctx.createBiquadFilter();
-    filter.type = 'lowpass';
-    filter.frequency.value = 900;
-    const lfo = ctx.createOscillator();
-    const lfoGain = ctx.createGain();
-    lfo.frequency.value = 0.07;
-    lfoGain.gain.value = 300;
-    lfo.connect(lfoGain).connect(filter.frequency);
-    lfo.start();
-    const g = ctx.createGain();
-    g.gain.value = 0;
-    g.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 4);
-    filter.connect(g).connect(master);
-    for (const f of [130.81, 196.0, 329.63, 587.33]) {
-      for (const detune of [-6, 6]) {
-        const o = ctx.createOscillator();
-        o.type = 'triangle';
-        o.frequency.value = f;
-        o.detune.value = detune;
-        const v = ctx.createGain();
-        v.gain.value = f > 400 ? 0.12 : 0.22;
-        o.connect(v).connect(filter);
-        o.start();
-      }
-    }
-  }
-
-  function pluck(freq, when = ctx.currentTime, level = 0.06) {
-    // Thumb-piano-like: sine plus a quiet upper partial, fast decay
-    const g = ctx.createGain();
-    g.gain.setValueAtTime(0, when);
-    g.gain.linearRampToValueAtTime(level, when + 0.005);
-    g.gain.exponentialRampToValueAtTime(0.0001, when + 1.6);
-    g.connect(master);
-    for (const [mult, amp] of [[1, 1], [4.2, 0.18]]) {
+  // a small bird: two to four quick rising whistles
+  function bird() {
+    const { ctx, rnd } = kit;
+    const base = rnd(2400, 3400);
+    let t = ctx.currentTime + 0.02;
+    const pan = ctx.createStereoPanner ? ctx.createStereoPanner() : null;
+    if (pan) pan.pan.value = rnd(-0.8, 0.8);
+    for (let k = 0, n = Math.floor(rnd(2, 5)); k < n; k++) {
       const o = ctx.createOscillator();
-      o.frequency.value = freq * mult;
-      const a = ctx.createGain();
-      a.gain.value = amp;
-      o.connect(a).connect(g);
-      o.start(when);
-      o.stop(when + 1.7);
+      o.frequency.setValueAtTime(base, t);
+      o.frequency.exponentialRampToValueAtTime(base * rnd(1.25, 1.5), t + 0.07);
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.035, t + 0.015);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.09);
+      o.connect(g);
+      kit.out(pan ? g.connect(pan) : g);
+      o.start(t);
+      o.stop(t + 0.1);
+      t += rnd(0.11, 0.18);
     }
   }
-
-  function startPlucks() {
-    const tick = () => {
-      if (!on) return;
-      const n = PENTATONIC[Math.floor(Math.random() * PENTATONIC.length)];
-      pluck(n);
-      if (Math.random() < 0.35) pluck(n * 1.5, ctx.currentTime + 0.18, 0.035);
-      pluckTimer = setTimeout(tick, 1800 + Math.random() * 1800);
-    };
-    tick();
-  }
-
-  function wind() {
-    const src = ctx.createBufferSource();
-    src.buffer = noiseBuffer(4);
-    src.loop = true;
-    windFilter = ctx.createBiquadFilter();
-    windFilter.type = 'bandpass';
-    windFilter.frequency.value = 500;
-    windFilter.Q.value = 0.8;
-    windGain = ctx.createGain();
-    windGain.gain.value = 0;
-    src.connect(windFilter).connect(windGain).connect(master);
-    src.start();
-  }
+  kit.addLayer(() => kit.loop(bird, [8, 18]));
 
   return {
-    get on() { return on; },
+    get on() { return kit.on; },
     start() {
-      if (!ctx) {
-        ctx = new (window.AudioContext || window.webkitAudioContext)();
-        master = ctx.createGain();
-        master.gain.value = 0.9;
-        master.connect(ctx.destination);
-        pad();
-        wind();
-      }
-      ctx.resume();
-      on = true;
-      master.gain.setTargetAtTime(0.9, ctx.currentTime, 0.4);
-      startPlucks();
+      kit.start();
+      kit.later(() => kit.phrase(), 700);
     },
-    stop() {
-      if (!ctx) return;
-      on = false;
-      clearTimeout(pluckTimer);
-      master.gain.setTargetAtTime(0, ctx.currentTime, 0.25);
+    stop: kit.stop,
+    // amount 0..1: wind through the maize while the cob rises
+    wind: kit.scroll,
+    stage(active) { if (!active) kit.scroll(0); },
+    // a new section comes into view: a door opens onto the field
+    section(i) {
+      kit.whoosh(0.3, 2, 0.12);
+      kit.later(() => kit.pluck(SCALE[[3, 4, 5, 2][i % 4]], undefined, { last: true }), 800);
     },
-    // amount 0..1, driven by how fast the cob rises out of the dust
-    wind(amount) {
-      if (!ctx || !on) return;
-      windGain.gain.setTargetAtTime(Math.min(amount, 1) * 0.16, ctx.currentTime, 0.12);
-      windFilter.frequency.setTargetAtTime(400 + amount * 900, ctx.currentTime, 0.2);
-    },
-    // A dry seed tap for buttons
-    tap() {
-      if (!ctx || !on) return;
-      const src = ctx.createBufferSource();
-      src.buffer = noiseBuffer(0.04);
-      const f = ctx.createBiquadFilter();
-      f.type = 'highpass';
-      f.frequency.value = 2400;
-      const g = ctx.createGain();
-      g.gain.setValueAtTime(0.25, ctx.currentTime);
-      g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.04);
-      src.connect(f).connect(g).connect(master);
-      src.start();
-    },
-    // One clear note when a headline lands
+    tap() { kit.jingle(0.2, 1); },
+    // a headline settles: a single plucked note and a bell
     chime() {
-      if (!ctx || !on) return;
-      pluck(PENTATONIC[4], ctx.currentTime, 0.07);
-      pluck(PENTATONIC[6], ctx.currentTime + 0.09, 0.04);
+      if (!kit.on) return;
+      kit.pluck(SCALE[5]);
+      kit.jingle(0.15, 2, 9);
     },
   };
 }
