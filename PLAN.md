@@ -86,12 +86,27 @@ Ilé Àtègbè, on amber:
 
 ### 2a. Sound and the welcome button (OPEN)
 
-UNESCO has a sound toggle and a "Visit now" button before the experience starts. Browsers only allow sound after a visitor taps something, which is why sites like this put a button first. The trade-off: a button before the content costs some visitors, especially on slow phones. Your call:
+What UNESCO does, measured from your recording (details in `research/reference-unesco/sound.md`):
 
-- Option A: no button. The site starts silent with a small sound toggle in the corner.
-- Option B: an "Enter" button after the loader, which also switches on sound. This is closer to UNESCO's feel.
+- No sound for the first 18 seconds. The logo, loader and welcome scene are silent.
+- Sound starts the moment "Visit now" is tapped. Browsers block sound until a visitor taps something, so the button is what makes sound possible.
+- Three layers: a calm music bed with no drums, one rushing whoosh on the dive into the 3D, and tiny soft clicks on buttons.
+- No speech anywhere.
 
-The ElevenLabs voiceover could live here later: one short spoken line per brand in the welcome scene.
+Your call:
+
+- Option A: no button. The site starts silent with a small sound toggle in the corner. Fewer visitors drop off.
+- Option B: an "Enter" button after the welcome scene, which also switches on sound. This is exactly what UNESCO does. Some visitors on slow phones leave at the button.
+
+Proposed sound per brand, if sound is on (APPROVE):
+
+| Layer | AGFICI | Adewura Natural | Ilé Àtègbè |
+|---|---|---|---|
+| Music bed | Warm, light, hopeful, thumb piano and soft shaker | Slow, calm, night-time ambient | Low, slow and ceremonial. Client approves the instruments. |
+| The dive | Wind over a field | A soft breath of air through leaves | The swish of the crown's bead fringe |
+| Button clicks | A dry seed tap | A water drop | A single bead click |
+
+Made later with ElevenLabs, alongside the voiceover. One short spoken line per brand could sit in the welcome scene.
 
 
 ## 3. How the 3D gets built (APPROVE)
