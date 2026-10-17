@@ -1,10 +1,10 @@
 // Tiny static server for local previews: node tools/serve.mjs [port]
-// Serves the repo root, so open /agfici/, /natural/ or /ategbe/.
+// Serves site/, so open /, /natural/, /ategbe/ or /farmers/.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 
-const root = process.cwd();
+const root = new URL('../site/', import.meta.url).pathname; // the published folder
 const port = Number(process.argv[2]) || 4173;
 const types = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css',

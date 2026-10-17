@@ -1,0 +1,3 @@
+# Preview build: keep search engines out until launch (site.config.json "indexable": false)
+User-agent: *
+Disallow: /

@@ -1,8 +1,23 @@
 # Plan and design system: three-site rebrand
 
-Status: plan only. Nothing is built yet. Items marked APPROVE need your yes before the build starts. Items marked CLIENT need an answer from the client.
+## 0. Change of direction (17 Oct 2026, after the client call)
 
-Decisions made by you (17 Oct 2026):
+This section overrides anything below that disagrees with it.
+
+- AGFICI (adewuragfici.com, the NGO) is off-limits. The client said not to touch it. Its prototype is retired. The farm design moves to the Adewura Giant Farmers Trust Fund (adewuragiantfarmers.org).
+- The three brands are now: Adewura Natural (medical), Ilé Àtègbè (spiritual), Adewura Giant Farmers Trust Fund (farming).
+- Option 3: one parent brand on one new domain, with the three brands under it. Each brand keeps its own identity inside the parent.
+- The parent homepage carries the full UNESCO-style opening. Choosing a brand opens that brand's own opening, with a Book a call option.
+- Parent name: the client will choose it. Built with the working name "Adewura" in one config file, so the swap is one edit.
+- Book a call: an online booking page per brand (Calendly or Google Calendar booking). Links pending from the client.
+- Google: Google Business Profiles for each business, and real Google reviews shown on the site once the profiles exist.
+- Old domains (adewuranatural.com, ileategbe.org, adewuragiantfarmers.org) forward to the matching new pages for 6 to 12 months, then expire. AGFICI stays untouched.
+- SEO on the new domain. Preview builds are marked noindex until launch, so search engines don't index a duplicate.
+- Trust Fund colors stay butter, maize gold and leaf green. Reason: its logo is gold and green (sampled #E4C352, #57EA68). Amber stays with Àtègbè.
+
+Trust Fund content on hand (saved homepage, 17 Oct 2026): name "Adewura Giant Farmers, Inc", the mission statement, four programs (Corn Field, Livestock Farming, Poultry Farming, Plantain Farming), email adewuragiantfarmers@gmail.com, the crown logo. Everything else on that page is template filler (fake 4.8 Google rating, (123) 456-7890, an invented testimonial, lorem ipsum) and is not used. The four photos are Pixabay stock. Real photos and the other pages are needed from the client.
+
+Decisions made by you (17 Oct 2026), before the change of direction:
 
 - Option 2: three separate identities. Nothing visibly connects the sites.
 - The design reference is your Instagram reel (instagram.com/reel/DbgjytGySiQ, by suryaxtech). The website references I suggested are rejected.

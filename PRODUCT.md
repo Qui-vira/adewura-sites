@@ -26,7 +26,7 @@ Site visitors differ per brand. See each site's PRODUCT.md.
 
 ## Positioning
 
-Three separate identities (Option 2). Each site gets its own look from scratch and nothing visibly connects them. Final decision by the designer on 17 Oct 2026, to keep the farming, medical and spiritual work apart in the public eye. The client note in `research/client-note-brand-family.md` recommends this option.
+Option 3, chosen by the client on 17 Oct 2026: one parent brand on one domain, with three brands under it. Each brand keeps its own identity (colors, fonts, 3D object, opening) inside the parent. The three brands are Adewura Natural, Ilé Àtègbè and the Adewura Giant Farmers Trust Fund. AGFICI is excluded at the client's request. This replaces the earlier Option 2 decision.
 
 ## Capabilities and Constraints
 

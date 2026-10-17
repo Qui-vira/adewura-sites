@@ -1,0 +1,55 @@
+{
+  "parentName": "Adewura",
+  "parentNameIsWorkingName": true,
+  "siteUrl": "https://adewura-preview.netlify.app",
+  "indexable": false,
+  "pages": [
+    {
+      "path": "/",
+      "priority": 1.0
+    },
+    {
+      "path": "/natural/",
+      "priority": 0.9
+    },
+    {
+      "path": "/ategbe/",
+      "priority": 0.9
+    },
+    {
+      "path": "/farmers/",
+      "priority": 0.9
+    }
+  ],
+  "booking": {
+    "natural": "",
+    "ategbe": "",
+    "farmers": ""
+  },
+  "redirects": {
+    "_note": "Old domains forward to the new pages for 6 to 12 months. Works only once each old domain is added to the Netlify site as a domain alias. adewuranatural.com lists only its real pages, so the spam pages left by the hack return 404 instead of being forwarded.",
+    "adewuranatural.com": {
+      "paths": [
+        "/",
+        "/about",
+        "/products",
+        "/restoria",
+        "/ale",
+        "/b-vtan",
+        "/contact"
+      ],
+      "catchAll": false,
+      "to": "/natural/"
+    },
+    "ileategbe.org": {
+      "paths": [],
+      "catchAll": true,
+      "to": "/ategbe/"
+    },
+    "adewuragiantfarmers.org": {
+      "paths": [],
+      "catchAll": true,
+      "to": "/farmers/"
+    }
+  }
+}

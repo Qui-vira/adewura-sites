@@ -1,0 +1,78 @@
+# Launch guide
+
+Everything the client and the designer must do to move from the preview to the real site. Each step says who does it.
+
+All settings live in one file, `site.config.json`. After changing it, run `npm run build`, commit and push. Netlify updates the site in about 30 seconds.
+
+
+## 1. Name the parent company (client)
+
+- The site uses the working name "Adewura" everywhere the parent name appears.
+- When the client chooses the real name, change `"parentName"` in `site.config.json`. Every visible mention updates on the next build.
+- Also edit by hand: the `<title>`, `og:title` and the structured-data `"name"` in `site/index.html`, and the `parentOrganization` name in each brand's `index.html`. These are search-engine fields the build does not rewrite yet.
+
+
+## 2. Buy the new domain (client)
+
+Checked 17 Oct 2026 in the official domain registries: adewura.com, adewura.org, adewuragroup.com, adewuragroup.org, adewuraholdings.com and adewurafamily.com had no registration record. That strongly suggests they are free, but only a registrar can confirm it at checkout.
+
+Then (designer):
+1. In Netlify, open the site and go to Domain management. Add the new domain and follow Netlify's DNS steps.
+2. In `site.config.json`, set `"siteUrl"` to the new address, for example `"https://adewura.com"`.
+3. Set `"indexable": true`. This removes the "don't index" tag from every page and opens `robots.txt` to search engines.
+4. Build, commit, push.
+
+
+## 3. Booking pages (client, then designer)
+
+The client creates one booking page per brand. Either works:
+- Calendly (free plan), or
+- Google Calendar appointment schedules.
+
+Paste each link into `site.config.json` under `"booking"`: `"natural"`, `"ategbe"`, `"farmers"`. Until a link is filled in, Book a call opens an email to that brand instead.
+
+
+## 4. Google Business Profiles (client)
+
+One profile per business at business.google.com. Google verifies ownership, usually by video, phone or post, so the owner must do this.
+
+| Brand | Address on the profile | Note |
+|---|---|---|
+| Adewura Natural Medical Centre | The Lagos centre's street address | Google does not accept P.O. boxes, so the US P.O. Box in Grayson, GA cannot be used. |
+| Ilé Àtègbè | The Conley, GA location, or a service area if visitors don't come in person | |
+| Adewura Giant Farmers Trust Fund | The farm's location | |
+
+For each profile: the exact brand name, a category, opening hours, phone, and the website address on the new domain (for example `https://adewura.com/natural/`). Pick the closest category from Google's own list.
+
+Reviews on the website: once the profiles exist and have reviews, the site can show them. This needs a Google Places API key from the client's Google Cloud account. Google's terms require showing its attribution next to the reviews.
+
+
+## 5. Forward the old domains (designer, with access to each domain)
+
+`site/_redirects` is already generated from `site.config.json`. It takes effect only after each old domain is attached to the Netlify site:
+
+1. In Netlify, add each old domain as a domain alias: adewuranatural.com, ileategbe.org, adewuragiantfarmers.org.
+2. Change each old domain's DNS to Netlify, following Netlify's instructions. They are on Bluehost today.
+3. Every page of ileategbe.org and adewuragiantfarmers.org then forwards to the matching brand page.
+4. adewuranatural.com forwards only its seven real pages. The 40 spam pages left by the hack return "not found", so Google drops them.
+5. Keep the domains renewed for 6 to 12 months, until Google shows the new addresses, then let them expire.
+
+AGFICI (adewuragfici.com) is not touched.
+
+
+## 6. Tell Google about the move (designer)
+
+1. Add the new domain to Google Search Console and verify it.
+2. Submit `https://NEW-DOMAIN/sitemap.xml`.
+3. For each old domain that is verified in Search Console, use its Change of Address tool to point at the new domain.
+
+
+## Still needed from the client
+
+- Parent company name
+- Domain purchase
+- Booking links for the three brands
+- Real farm photos and program details for the Trust Fund
+- Approval of the Àtègbè crown, icons and divination powder
+- Confirmation of Natural's phone numbers and the Restoria price
+- Review of the Aristolochia (Akoogun) safety note on two Natural products

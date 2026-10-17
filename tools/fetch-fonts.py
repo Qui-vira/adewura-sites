@@ -20,7 +20,7 @@ for spec in sys.argv[2:]:
         wght = re.search(r"font-weight: ([\d ]+);", block).group(1).replace(" ", "-")
         stretch = re.search(r"font-stretch: ([\w%]+);", block)
         src = re.search(r"url\((https://[^)]+\.woff2)\)", block).group(1)
-        name = f"{fam.replace(' ', '')}-{wght}{'-' + stretch.group(1) if stretch else ''}-{subset}.woff2"
+        name = f"{fam.replace(' ', '')}-{wght}{'-' + stretch.group(1).replace('%', 'pct') if stretch else ''}-{subset}.woff2"
         subprocess.run(["curl", "-sSf", "-o", str(out / name), src], check=True)
         css_out.append(f"/* {subset} */\n" + block.replace(src, name))
 (out / "fonts.css").write_text("\n".join(css_out) + "\n")

@@ -1,11 +1,29 @@
 # adewura-sites
 
-Rebrand prototypes for three client websites:
+One website for a parent brand (working name "Adewura") and three brands under it:
 
-- `agfici/`: AGFICI, farming nonprofit (was adewuragfici.com on Wix)
-- `natural/`: Adewura Natural, herbal medical centre (was adewuranatural.com on WordPress)
-- `ategbe/`: Ilé Àtègbè, Ifá and Òrìṣà house (was ileategbe.org on WordPress)
+- `site/`: the parent homepage, with the UNESCO-style opening and a door to each brand
+- `site/natural/`: Adewura Natural Medical Centre
+- `site/ategbe/`: Ilé Àtègbè
+- `site/farmers/`: Adewura Giant Farmers Trust Fund
 
-Static HTML, one Three.js hero per site, light and bright grounds.
+AGFICI (adewuragfici.com) is not part of this project. The client asked for it to be left alone.
 
-Start with `PLAN.md`. Product facts live in `PRODUCT.md` and each site's own `PRODUCT.md`. The scrape of the old sites, the brand audit and the references are in `research/`. Photos and video from the old sites are in `assets/`.
+Static HTML, one Three.js object per brand, light and bright grounds.
+
+## Working on it
+
+```
+npm install
+npm run build    # bundles everything into site/, applies site.config.json
+npm run serve    # preview at http://localhost:4173/
+```
+
+- Settings (parent name, site address, booking links, indexing, old-domain forwarding): `site.config.json`
+- Launch steps for the client and the designer: `LAUNCH.md`
+- Plan and decisions: `PLAN.md` (section 0 is the current direction)
+- Product notes and design systems per brand: `docs/`
+- Scrape of the old sites, brand audit and references: `research/`
+- Netlify: one site, base directory `site`
+
+Only `site/` is published. Keep notes and research out of it.
