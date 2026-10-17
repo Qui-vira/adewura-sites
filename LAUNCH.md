@@ -69,7 +69,7 @@ AGFICI (adewuragfici.com) is not touched.
 
 - Parent company name
 - Domain purchase
-- The WhatsApp number for Book a call
+- Confirm +1 678 373 6836 is the right WhatsApp number for Book a call
 - Program details for the Trust Fund
 - Approval of the Àtègbè crown, icons and divination powder
 - Confirmation of Natural's phone numbers and the Restoria price

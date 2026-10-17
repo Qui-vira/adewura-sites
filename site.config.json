@@ -23,7 +23,7 @@
   ],
   "whatsapp": {
     "_note": "Book a call opens this WhatsApp number on every brand. Digits only with country code, no + or spaces, e.g. 2348012345678. Empty keeps the email fallback.",
-    "number": "",
+    "number": "16783736836",
     "messages": {
       "natural": "Hello, I would like to book a call with Adewura Natural Medical Centre.",
       "ategbe": "Hello, I would like to book a call with Ilé Àtègbè.",
