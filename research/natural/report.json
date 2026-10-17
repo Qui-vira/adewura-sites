@@ -1,0 +1,693 @@
+{
+ "pages": [
+  [
+   "about",
+   "https://www.adewuranatural.com/about",
+   "About &#8211; AdewuraNatural: A Place For Total Healing"
+  ],
+  [
+   "ale",
+   "https://www.adewuranatural.com/ale",
+   "ALE &#8211; AdewuraNatural: A Place For Total Healing"
+  ],
+  [
+   "b-vtan",
+   "https://www.adewuranatural.com/b-vtan",
+   "B Vtan &#8211; AdewuraNatural: A Place For Total Healing"
+  ],
+  [
+   "contact",
+   "https://www.adewuranatural.com/contact",
+   "Contact &#8211; AdewuraNatural: A Place For Total Healing"
+  ],
+  [
+   "home",
+   "https://www.adewuranatural.com",
+   "AdewuraNatural: A Place For Total Healing"
+  ],
+  [
+   "products",
+   "https://www.adewuranatural.com/products",
+   "Products &#8211; AdewuraNatural: A Place For Total Healing"
+  ],
+  [
+   "restoria",
+   "https://www.adewuranatural.com/restoria",
+   "Restoria &#8211; AdewuraNatural: A Place For Total Healing"
+  ]
+ ],
+ "background_and_borders_by_area": [
+  [
+   "#FAFAFA",
+   35.08
+  ],
+  [
+   "#111111",
+   31.1
+  ],
+  [
+   "#001524",
+   31.1
+  ],
+  [
+   "#FFFFFF",
+   2.63
+  ],
+  [
+   "border #E6E6E6",
+   0.04
+  ],
+  [
+   "border #7D7D7D a0.27",
+   0.04
+  ]
+ ],
+ "text_colors_by_chars": [
+  [
+   "#333333",
+   76.12
+  ],
+  [
+   "#FFFFFF a0.66",
+   12.96
+  ],
+  [
+   "#111111",
+   5.79
+  ],
+  [
+   "#8BC34A",
+   2.18
+  ],
+  [
+   "#000000",
+   1.06
+  ],
+  [
+   "#FFFFFF",
+   0.96
+  ],
+  [
+   "#3A3A3A",
+   0.31
+  ],
+  [
+   "#FF0000",
+   0.3
+  ],
+  [
+   "#61CE70",
+   0.26
+  ],
+  [
+   "#6A9739",
+   0.06
+  ]
+ ],
+ "fonts_by_chars": [
+  [
+   "Open Sans | 400",
+   79.75
+  ],
+  [
+   "Open Sans | 700",
+   12.94
+  ],
+  [
+   "Merriweather | 700",
+   6.1
+  ],
+  [
+   "Merriweather | 400",
+   0.65
+  ],
+  [
+   "Open Sans | 500",
+   0.51
+  ],
+  [
+   "Open Sans | 600",
+   0.06
+  ]
+ ],
+ "headings": [
+  [
+   "about",
+   "H1: About Us"
+  ],
+  [
+   "about",
+   "H2: We Are Your Trusted Partner in Natural Remedies"
+  ],
+  [
+   "about",
+   "H4: Numbers Speak For Themselves!"
+  ],
+  [
+   "about",
+   "H3: Certified Products"
+  ],
+  [
+   "about",
+   "H2: We Offer Premium Herbal Solutions for Enhanced Wellbeing!"
+  ],
+  [
+   "about",
+   "H4: Quick Links"
+  ],
+  [
+   "about",
+   "H2: Download Our Mobile App"
+  ],
+  [
+   "ale",
+   "H2: ALΣ™"
+  ],
+  [
+   "ale",
+   "H2: Transform Your Intimacy Naturally in Just 7 Nights: Africa’s Scientifically Backed Formula Delivers Results in Days—No Fads or Drills!"
+  ],
+  [
+   "ale",
+   "H3: Natural Ingredients"
+  ],
+  [
+   "ale",
+   "H3: Scientifically Approved"
+  ],
+  [
+   "ale",
+   "H3: Easy Results"
+  ],
+  [
+   "ale",
+   "H3: 1090+ Happy Customers"
+  ],
+  [
+   "ale",
+   "H2: Get Your ALΣ Now—Limited TO JUST 19 INDIVIDUALS!"
+  ],
+  [
+   "ale",
+   "H4: Quick Links"
+  ],
+  [
+   "ale",
+   "H2: Download Our Mobile App"
+  ],
+  [
+   "b-vtan",
+   "H2: Say Goodbye to Bacterial Vaginosis Misery with B VTAN – The Solution You’ve Been Waiting For!"
+  ],
+  [
+   "b-vtan",
+   "H2: Imagine If B Vtan Could Help You Bring Back Feminine Freshness?"
+  ],
+  [
+   "b-vtan",
+   "H2: What Causes It?"
+  ],
+  [
+   "b-vtan",
+   "H2: What are the symptoms of BV?"
+  ],
+  [
+   "b-vtan",
+   "H2: Do you suffer from bacterial vaginosis and have tried countless products with no results?"
+  ],
+  [
+   "b-vtan",
+   "H2: “Say Goodbye to Your Skepticism & Doubt – B VTAN is Different!”"
+  ],
+  [
+   "b-vtan",
+   "H4: Quick Links"
+  ],
+  [
+   "b-vtan",
+   "H2: Download Our Mobile App"
+  ],
+  [
+   "contact",
+   "H1: Get In Touch"
+  ],
+  [
+   "contact",
+   "H2: Frequently Asked Question!"
+  ],
+  [
+   "contact",
+   "H4: Quick Links"
+  ],
+  [
+   "contact",
+   "H2: Download Our Mobile App"
+  ],
+  [
+   "home",
+   "H2: B VTÁN"
+  ],
+  [
+   "home",
+   "H2: ABOUT THE MD"
+  ],
+  [
+   "home",
+   "H2: Featured Products"
+  ],
+  [
+   "home",
+   "H4: Quick Links"
+  ],
+  [
+   "home",
+   "H2: Download Our Mobile App"
+  ],
+  [
+   "products",
+   "H2: ALΣ"
+  ],
+  [
+   "products",
+   "H2: STABILIPHIER"
+  ],
+  [
+   "products",
+   "H2: B Vtán"
+  ],
+  [
+   "products",
+   "H2: CinnaSorg"
+  ],
+  [
+   "products",
+   "H2: CLEANSER 109 MIXTURE"
+  ],
+  [
+   "products",
+   "H2: Ẹjẹlólò"
+  ],
+  [
+   "products",
+   "H2: Ferruméjè"
+  ],
+  [
+   "products",
+   "H2: DIABETI – GREEN"
+  ],
+  [
+   "products",
+   "H4: Quick Links"
+  ],
+  [
+   "products",
+   "H2: Download Our Mobile App"
+  ],
+  [
+   "restoria",
+   "H2: Finally Quiet Your Mind at Night — And Wake Up Refreshed Without Melatonin or Harsh Sleep Aids!"
+  ],
+  [
+   "restoria",
+   "H2: A Gentle Botanical Solution Designed for the Modern Mind"
+  ],
+  [
+   "restoria",
+   "H3: Hibiscus"
+  ],
+  [
+   "restoria",
+   "H3: Peperomia Pellucida"
+  ],
+  [
+   "restoria",
+   "H2: The Story That Inspired Restoria™"
+  ],
+  [
+   "restoria",
+   "H2: HOW HER LIFE CHANGED"
+  ],
+  [
+   "restoria",
+   "H3: Wake Up With Real Energy"
+  ],
+  [
+   "restoria",
+   "H3: Focus Better During the Day"
+  ],
+  [
+   "restoria",
+   "H3: Feel Emotionally Balanced"
+  ],
+  [
+   "restoria",
+   "H3: Enjoy Peaceful Evenings"
+  ],
+  [
+   "restoria",
+   "H3: Restore Her Confidence"
+  ],
+  [
+   "restoria",
+   "H2: WHY RESTORIA™ WORKS"
+  ],
+  [
+   "restoria",
+   "H3: Hibiscus Supports “Calm”"
+  ],
+  [
+   "restoria",
+   "H3: Peperomia Pellucida Supports “Emotional Balance”"
+  ],
+  [
+   "restoria",
+   "H2: “Say Goodbye to Your Skepticism & Doubt – Restoria™ is Different!”"
+  ],
+  [
+   "restoria",
+   "H4: Quick Links"
+  ],
+  [
+   "restoria",
+   "H2: Download Our Mobile App"
+  ]
+ ],
+ "media": [
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/IMG_4533-300x99.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/IMG_4533-95x31.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/IMG_4533.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/cropped-Logo.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/cropped-Logo-300x100.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/cropped-Logo-150x50.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2021/03/basil-leaf.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2020/01/banner-01.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2019/06/farming04-free-img.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2020/01/image-01.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2020/01/image-02.jpg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2019/06/farming03-free-img.jpg",
+   "about"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f331.svg",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2024/12/Capture.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2019/06/organic-badge-freeimg.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2019/07/logo-leaf-new.png",
+   "about"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2019/07/organic-store-white-logo.png",
+   "about"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f389.svg",
+   "ale"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f33f.svg",
+   "ale"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f30d.svg",
+   "ale"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f48a.svg",
+   "ale"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f31f.svg",
+   "ale"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/23f3.svg",
+   "ale"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f525.svg",
+   "ale"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/02/Microscopic-diagnosis-of-bacterial-Vaginosis-epithelial-cell.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/02/Microscopic-diagnosis-of-bacterial-Vaginosis-epithelial-cell-300x200.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/02/Microscopic-diagnosis-of-bacterial-Vaginosis-epithelial-cell-600x400.jpg",
+   "b-vtan"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/animated-arrow-down.gif",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6-600x398.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6-300x199.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6-768x510.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/02/Crotch-abdomen.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/02/Crotch-abdomen-300x200.jpg",
+   "b-vtan"
+  ],
+  [
+   "http://www.adewuranatural.com/wp-content/uploads/2023/02/Crotch-abdomen-600x400.jpg",
+   "b-vtan"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/refunds.png",
+   "b-vtan"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6-300x199.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6-768x510.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/16e8018b-b157-4414-b770-7682083cc5f6-600x398.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/Medical-Director.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/Medical-Director-300x300.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/Medical-Director-150x150.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/Medical-Director-600x600.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/02/Medical-Director-100x100.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/ae8ffb5d-7368-4860-a87a-e7882c969332-300x202.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/1c696a64-1315-4c31-ad8a-a9eb483dacce-300x198.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/85d54741-b304-4b92-bd01-fdb9698cc361-300x198.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f6b90e04-e255-4ce7-8ea2-0022aa6672d7-300x185.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f103c308-169b-46aa-8231-c34e7d14fe47-300x189.jpg",
+   "home"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2024/12/Coming-Soon-1536x1024.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2024/12/Coming-Soon-1024x683.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2024/12/Coming-Soon-300x200.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2024/12/Coming-Soon-768x512.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/ae8ffb5d-7368-4860-a87a-e7882c969332.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/ae8ffb5d-7368-4860-a87a-e7882c969332-600x405.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/85d54741-b304-4b92-bd01-fdb9698cc361.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/85d54741-b304-4b92-bd01-fdb9698cc361-768x506.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/85d54741-b304-4b92-bd01-fdb9698cc361-600x395.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/1c696a64-1315-4c31-ad8a-a9eb483dacce.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/1c696a64-1315-4c31-ad8a-a9eb483dacce-768x507.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/1c696a64-1315-4c31-ad8a-a9eb483dacce-600x396.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2018/06/red-chillies.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f103c308-169b-46aa-8231-c34e7d14fe47.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f103c308-169b-46aa-8231-c34e7d14fe47-768x485.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f103c308-169b-46aa-8231-c34e7d14fe47-600x379.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f6b90e04-e255-4ce7-8ea2-0022aa6672d7.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f6b90e04-e255-4ce7-8ea2-0022aa6672d7-768x473.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2023/01/f6b90e04-e255-4ce7-8ea2-0022aa6672d7-600x369.jpg",
+   "products"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/IMG_4006.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/IMG_4006-300x248.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/IMG_4005-242x300.jpeg",
+   "restoria"
+  ],
+  [
+   "https://s.w.org/images/core/emoji/17.0.2/svg/1f634.svg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/71a489ab-5cfd-4186-b21d-84e12b821bc3.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/71a489ab-5cfd-4186-b21d-84e12b821bc3-600x1061.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/71a489ab-5cfd-4186-b21d-84e12b821bc3-170x300.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/71a489ab-5cfd-4186-b21d-84e12b821bc3-579x1024.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/IMG_4004.jpeg",
+   "restoria"
+  ],
+  [
+   "https://www.adewuranatural.com/wp-content/uploads/2026/03/IMG_4004-300x290.jpeg",
+   "restoria"
+  ]
+ ]
+}

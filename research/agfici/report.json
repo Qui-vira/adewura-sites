@@ -1,0 +1,875 @@
+{
+ "pages": [
+  [
+   "blank-1",
+   "https://www.adewuragfici.com/blank-1",
+   "Accessibility Statement | Agfici"
+  ],
+  [
+   "blank-2",
+   "https://www.adewuragfici.com/blank-2",
+   "Terms & Conditions | Agfici"
+  ],
+  [
+   "blank-3",
+   "https://www.adewuragfici.com/blank-3",
+   "Refund Policy | Agfici"
+  ],
+  [
+   "blank",
+   "https://www.adewuragfici.com/blank",
+   "Privacy Policy | Agfici"
+  ],
+  [
+   "donate",
+   "https://www.adewuragfici.com/donate",
+   "Donate | Agfici"
+  ],
+  [
+   "event-details-agfici-family-farming-fair",
+   "https://www.adewuragfici.com/event-details/agfici-family-farming-fair",
+   "AGFICI Family Farming Fair | Agfici"
+  ],
+  [
+   "event-details-empowerment-through-sustainable-agriculture-workshop",
+   "https://www.adewuragfici.com/event-details/empowerment-through-sustainable-agriculture-workshop",
+   "Empowerment Through Sustainable Agriculture Workshop | Agfici"
+  ],
+  [
+   "event-details-national-sustainable-agriculture-summit",
+   "https://www.adewuragfici.com/event-details/national-sustainable-agriculture-summit",
+   "National Sustainable Agriculture Summit | Agfici"
+  ],
+  [
+   "event-list",
+   "https://www.adewuragfici.com/event-list",
+   "Events | Agfici"
+  ],
+  [
+   "events",
+   "https://www.adewuragfici.com/events",
+   "Agfici"
+  ],
+  [
+   "groups",
+   "https://www.adewuragfici.com/groups",
+   "Groups | Agfici"
+  ],
+  [
+   "home",
+   "https://www.adewuragfici.com",
+   "Home | Agfici"
+  ],
+  [
+   "members",
+   "https://www.adewuragfici.com/members",
+   "Members | Agfici"
+  ],
+  [
+   "my-subscriptions",
+   "https://www.adewuragfici.com/my-subscriptions",
+   "Agfici"
+  ],
+  [
+   "notifications",
+   "https://www.adewuragfici.com/notifications",
+   "Agfici"
+  ],
+  [
+   "product-page-restoria",
+   "https://www.adewuragfici.com/product-page/restoria",
+   "Restoria | Agfici"
+  ],
+  [
+   "restoria",
+   "https://www.adewuragfici.com/restoria",
+   "Restoria | Agfici"
+  ]
+ ],
+ "background_and_borders_by_area": [
+  [
+   "#403F2B",
+   70.63
+  ],
+  [
+   "#F7F290",
+   15.92
+  ],
+  [
+   "#4D4B36",
+   5.97
+  ],
+  [
+   "#FEFAF1 a0.10",
+   2.27
+  ],
+  [
+   "#403F2B a0.00",
+   1.4
+  ],
+  [
+   "#29291F",
+   1.14
+  ],
+  [
+   "#FFFFFF a0.00",
+   0.84
+  ],
+  [
+   "#4D4B36 a0.80",
+   0.7
+  ],
+  [
+   "#4D4B36 a0.00",
+   0.54
+  ],
+  [
+   "#FEFAF1",
+   0.45
+  ],
+  [
+   "#FFFFFF",
+   0.03
+  ],
+  [
+   "#1878F2",
+   0.03
+  ],
+  [
+   "border #FEFAF1",
+   0.03
+  ],
+  [
+   "#403F2B a0.10",
+   0.03
+  ],
+  [
+   "#FEFAF1 a0.00",
+   0.01
+  ],
+  [
+   "#384AD3 a0.00",
+   0.01
+  ],
+  [
+   "border #4D4B36",
+   0.0
+  ],
+  [
+   "border #F7F290",
+   0.0
+  ],
+  [
+   "border #DADCE0",
+   0.0
+  ],
+  [
+   "border #9F9D8E",
+   0.0
+  ]
+ ],
+ "text_colors_by_chars": [
+  [
+   "#F7F290",
+   90.93
+  ],
+  [
+   "#403F2B",
+   4.25
+  ],
+  [
+   "#FEFAF1",
+   3.02
+  ],
+  [
+   "#000000",
+   1.07
+  ],
+  [
+   "#0000EE",
+   0.43
+  ],
+  [
+   "#FFFFFF",
+   0.27
+  ],
+  [
+   "#4D4B36",
+   0.03
+  ]
+ ],
+ "fonts_by_chars": [
+  [
+   "avenir-lt-w01_35-light1475496 | 400",
+   90.5
+  ],
+  [
+   "fraunces_120pt-light | 700",
+   5.31
+  ],
+  [
+   "Arial | 400",
+   1.47
+  ],
+  [
+   "avenir-lt-w01_35-light1475496 | 700",
+   1.43
+  ],
+  [
+   "bai jamjuree | 700",
+   0.47
+  ],
+  [
+   "madefor-text | 400",
+   0.47
+  ],
+  [
+   "madefor-display | 400",
+   0.23
+  ],
+  [
+   "fraunces_120pt-light | 400",
+   0.09
+  ],
+  [
+   "avenir-lt-w01_85-heavy1475544 | 400",
+   0.04
+  ]
+ ],
+ "headings": [
+  [
+   "blank-1",
+   "H1: Accessibility Statement"
+  ],
+  [
+   "blank-1",
+   "H2: What web accessibility is"
+  ],
+  [
+   "blank-1",
+   "H2: Accessibility adjustments on this site"
+  ],
+  [
+   "blank-1",
+   "H2: Declaration of partial compliance with the standard due to third-party content [only add if relevant]"
+  ],
+  [
+   "blank-1",
+   "H2: Accessibility arrangements in the organization [only add if relevant]"
+  ],
+  [
+   "blank-1",
+   "H2: Requests, issues, and suggestions"
+  ],
+  [
+   "blank-2",
+   "H1: Terms & Conditions"
+  ],
+  [
+   "blank-2",
+   "H2: A legal disclaimer"
+  ],
+  [
+   "blank-2",
+   "H2: Terms & Conditions - the basics"
+  ],
+  [
+   "blank-2",
+   "H2: What to include in the T&C document"
+  ],
+  [
+   "blank-3",
+   "H1: Refund Policy"
+  ],
+  [
+   "blank-3",
+   "H2: A legal disclaimer"
+  ],
+  [
+   "blank-3",
+   "H2: Refund Policy - the basics"
+  ],
+  [
+   "blank-3",
+   "H2: What to include in the Refund Policy"
+  ],
+  [
+   "blank",
+   "H1: Privacy Policy"
+  ],
+  [
+   "blank",
+   "H2: A legal disclaimer"
+  ],
+  [
+   "blank",
+   "H2: Privacy Policy - the basics"
+  ],
+  [
+   "blank",
+   "H2: What to include in the Privacy Policy"
+  ],
+  [
+   "donate",
+   "H1: Make a difference"
+  ],
+  [
+   "event-details-agfici-family-farming-fair",
+   "H1: AGFICI Family Farming Fair"
+  ],
+  [
+   "event-details-agfici-family-farming-fair",
+   "H2: Time & Location"
+  ],
+  [
+   "event-details-agfici-family-farming-fair",
+   "H2: About the event"
+  ],
+  [
+   "event-details-agfici-family-farming-fair",
+   "H2: Share this event"
+  ],
+  [
+   "event-details-empowerment-through-sustainable-agriculture-workshop",
+   "H1: Empowerment Through Sustainable Agriculture Workshop"
+  ],
+  [
+   "event-details-empowerment-through-sustainable-agriculture-workshop",
+   "H2: Time & Location"
+  ],
+  [
+   "event-details-empowerment-through-sustainable-agriculture-workshop",
+   "H2: About the event"
+  ],
+  [
+   "event-details-empowerment-through-sustainable-agriculture-workshop",
+   "H2: Share this event"
+  ],
+  [
+   "event-details-national-sustainable-agriculture-summit",
+   "H1: National Sustainable Agriculture Summit"
+  ],
+  [
+   "event-details-national-sustainable-agriculture-summit",
+   "H2: Time & Location"
+  ],
+  [
+   "event-details-national-sustainable-agriculture-summit",
+   "H2: About the event"
+  ],
+  [
+   "event-details-national-sustainable-agriculture-summit",
+   "H2: Share this event"
+  ],
+  [
+   "event-list",
+   "H1: Upcoming Events"
+  ],
+  [
+   "events",
+   "H2: Sign Up"
+  ],
+  [
+   "groups",
+   "H1: Groups Feed"
+  ],
+  [
+   "groups",
+   "H2: Suggested Groups"
+  ],
+  [
+   "home",
+   "H1: From Sustainable Farms to Empowered Futures Advancing food security, education, and community-led empowerment."
+  ],
+  [
+   "home",
+   "H2: Advancing food security, education, and community-led empowerment"
+  ],
+  [
+   "home",
+   "H2: Upcoming Events"
+  ],
+  [
+   "home",
+   "H2: Impact"
+  ],
+  [
+   "home",
+   "H2: Initiatives"
+  ],
+  [
+   "home",
+   "H3: Farming"
+  ],
+  [
+   "home",
+   "H3: Empowerment"
+  ],
+  [
+   "home",
+   "H3: Community"
+  ],
+  [
+   "home",
+   "H2: Empowering Livelihoods"
+  ],
+  [
+   "home",
+   "H3: Community Impact"
+  ],
+  [
+   "home",
+   "H3: Sustainable Development"
+  ],
+  [
+   "home",
+   "H3: Empowerment Through Education"
+  ],
+  [
+   "home",
+   "H2: Follow Us"
+  ],
+  [
+   "home",
+   "H2: Our Story"
+  ],
+  [
+   "home",
+   "H3: Get to Know Us"
+  ],
+  [
+   "home",
+   "H2: Watch Now"
+  ],
+  [
+   "my-subscriptions",
+   "H2: Sign Up"
+  ],
+  [
+   "notifications",
+   "H2: Sign Up"
+  ],
+  [
+   "product-page-restoria",
+   "H1: Restoria"
+  ],
+  [
+   "restoria",
+   "H1: Community Wellness Partners & Sponsored Products"
+  ],
+  [
+   "restoria",
+   "H2: Featured Partner Section"
+  ]
+ ],
+ "media": [
+  [
+   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAIAAAC0SDtlAAAAGklEQVQYlWP8//8/AymAiSTVoxpoooGBgQEAMWADDx3noXgAAAAASUVORK5CYII=",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/64a918_ecce71321e844673b977c572d915fa2b~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/64a918_ecce71321e844673b977c572d915fa2b~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/64a918_ecce71321e844673b977c572d915fa2b~mv2.png/v1/fill/w_22",
+   "blank-1"
+  ],
+  [
+   "h_22",
+   "blank-1"
+  ],
+  [
+   "al_c",
+   "blank-1"
+  ],
+  [
+   "q_85",
+   "blank-1"
+  ],
+  [
+   "usm_0.66_1.00_0.01",
+   "blank-1"
+  ],
+  [
+   "enc_avif",
+   "blank-1"
+  ],
+  [
+   "quality_auto/64a918_ecce71321e844673b977c572d915fa2b~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/64a918_ecce71321e844673b977c572d915fa2b~mv2.png/v1/fill/w_44",
+   "blank-1"
+  ],
+  [
+   "h_44",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/64a918_b802763ffe1b4e9292c9d7f1605587fb~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/64a918_b802763ffe1b4e9292c9d7f1605587fb~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/64a918_b802763ffe1b4e9292c9d7f1605587fb~mv2.png/v1/fill/w_22",
+   "blank-1"
+  ],
+  [
+   "quality_auto/64a918_b802763ffe1b4e9292c9d7f1605587fb~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/64a918_b802763ffe1b4e9292c9d7f1605587fb~mv2.png/v1/fill/w_44",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/2e2a49_eeae1c6722bf4f14a618685f82a5e91f~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e2a49_eeae1c6722bf4f14a618685f82a5e91f~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/2e2a49_eeae1c6722bf4f14a618685f82a5e91f~mv2.png/v1/fill/w_22",
+   "blank-1"
+  ],
+  [
+   "quality_auto/2e2a49_eeae1c6722bf4f14a618685f82a5e91f~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/2e2a49_eeae1c6722bf4f14a618685f82a5e91f~mv2.png/v1/fill/w_44",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/2e2a49_4dfa4833c09a4a259cb9fadd7d91000b~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e2a49_4dfa4833c09a4a259cb9fadd7d91000b~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/2e2a49_4dfa4833c09a4a259cb9fadd7d91000b~mv2.png/v1/fill/w_22",
+   "blank-1"
+  ],
+  [
+   "quality_auto/2e2a49_4dfa4833c09a4a259cb9fadd7d91000b~mv2.png",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/2e2a49_4dfa4833c09a4a259cb9fadd7d91000b~mv2.png/v1/fill/w_44",
+   "blank-1"
+  ],
+  [
+   "https://static.wixstatic.com/media/22e53e_065eb0f4781b47f28293ae0c0430fa42~mv2.png/v1/fill/w_869,h_1024,al_c,q_90,enc_avif,quality_auto/22e53e_065eb0f4781b47f28293ae0c0430fa42~mv2.png",
+   "donate"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_8e711f3d13d64aacaa862bc51b1af6e8~mv2.png/v1/fill/w_49,h_28,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/162907_8e711f3d13d64aacaa862bc51b1af6e8~mv2.png",
+   "event-details-agfici-family-farming-fair"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_8e711f3d13d64aacaa862bc51b1af6e8~mv2.png/v1/fill/w_1344,h_758,fp_0.50_0.50,q_90,enc_auto/162907_8e711f3d13d64aacaa862bc51b1af6e8~mv2.png",
+   "event-details-agfici-family-farming-fair"
+  ],
+  [
+   "IFRAME:https://events.wixapps.net/events-server/html/google-map-v2?locale=en&lat=10.503644&lng=7.433739500000001&instance=RlgGxUCRt7HN4OHFe3r64XbsIurSzDYffD_7hPK608o.eyJpbnN0YW5jZUlkIjoiNTA4YTM1Y2QtMzAzNy00MDgwLTlhMzAtOWQzZGMwNDlkOTI1IiwiYXBwRGVmSWQiOiIxNDA2MDNhZC1hZjhkLTg0YTUtMmM4MC1hMGY2MGNiNDczNTEiLCJtZXRhU2l0ZUlkIjoiMTEyMmMzYjYtNzM3Yi00YzVkLWEzZGMtNzBhNTFhYmJhMjQ1Iiwic2lnbkRhdGUiOiIyMDI2LTEwLTE3VDAzOjAxOjU1LjcxM1oiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6Ijc2YWIwMTgwLWYyZmItNGM5MC05NGI2LWI2MTcwNTM3NjNkZSIsImJpVG9rZW4iOiI0MWE4ZjY3Yi00MzRjLTBjZGQtMzllYy1lZDk4ZGFmMjdiNjAiLCJzaXRlT3duZXJJZCI6IjE2MjkwNzY4LTUzMTktNGQxOS1hNzhjLWI2ZGEzM2I3MzNlMiIsImJzIjoiOE9QV1lkUmFoTzUxeHp2OWcwcVRGQU5xXzg5RFBYNzJSdHBMdHdXaVoxOCIsInNjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDcuNTkxWiIsImFjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDNaIn0",
+   "event-details-agfici-family-farming-fair"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png/v1/fill/w_49,h_28,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png",
+   "event-details-empowerment-through-sustainable-agriculture-workshop"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png/v1/fill/w_1344,h_758,fp_0.50_0.50,q_90,enc_auto/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png",
+   "event-details-empowerment-through-sustainable-agriculture-workshop"
+  ],
+  [
+   "IFRAME:https://events.wixapps.net/events-server/html/google-map-v2?locale=en&lat=9.0562646&lng=7.4985259&instance=mBZuXyHoWMxNHxorY-el5SKb2-ezBBBTMxL7MJu0jMw.eyJpbnN0YW5jZUlkIjoiNTA4YTM1Y2QtMzAzNy00MDgwLTlhMzAtOWQzZGMwNDlkOTI1IiwiYXBwRGVmSWQiOiIxNDA2MDNhZC1hZjhkLTg0YTUtMmM4MC1hMGY2MGNiNDczNTEiLCJtZXRhU2l0ZUlkIjoiMTEyMmMzYjYtNzM3Yi00YzVkLWEzZGMtNzBhNTFhYmJhMjQ1Iiwic2lnbkRhdGUiOiIyMDI2LTEwLTE3VDAyOjU4OjQyLjQ5NFoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImUxZTY1ODU4LWQ4M2QtNDIzOC04M2UyLWY2NzFkNjZkYjNhMCIsImJpVG9rZW4iOiI0MWE4ZjY3Yi00MzRjLTBjZGQtMzllYy1lZDk4ZGFmMjdiNjAiLCJzaXRlT3duZXJJZCI6IjE2MjkwNzY4LTUzMTktNGQxOS1hNzhjLWI2ZGEzM2I3MzNlMiIsImJzIjoiUFNLUEVoeEJUWDE3bDdoaHZ6cGUtYW1sb3lPWmNUUWc3MFhZZHVfRVpzTSIsInNjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDcuNTkxWiIsImFjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDNaIn0",
+   "event-details-empowerment-through-sustainable-agriculture-workshop"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_194c27bd3c2d47e5b253241656bbfecf~mv2.png/v1/fill/w_49,h_28,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/162907_194c27bd3c2d47e5b253241656bbfecf~mv2.png",
+   "event-details-national-sustainable-agriculture-summit"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_194c27bd3c2d47e5b253241656bbfecf~mv2.png/v1/fill/w_1344,h_758,fp_0.50_0.50,q_90,enc_auto/162907_194c27bd3c2d47e5b253241656bbfecf~mv2.png",
+   "event-details-national-sustainable-agriculture-summit"
+  ],
+  [
+   "IFRAME:https://events.wixapps.net/events-server/html/google-map-v2?locale=en&lat=6.6017292&lng=3.3520211&instance=DpByOd4zHMrfO74e6wFLL6MD2fEfsMhAtN77yZd69U0.eyJpbnN0YW5jZUlkIjoiNTA4YTM1Y2QtMzAzNy00MDgwLTlhMzAtOWQzZGMwNDlkOTI1IiwiYXBwRGVmSWQiOiIxNDA2MDNhZC1hZjhkLTg0YTUtMmM4MC1hMGY2MGNiNDczNTEiLCJtZXRhU2l0ZUlkIjoiMTEyMmMzYjYtNzM3Yi00YzVkLWEzZGMtNzBhNTFhYmJhMjQ1Iiwic2lnbkRhdGUiOiIyMDI2LTEwLTE3VDAyOjU5OjQ1LjMzMFoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjA4ODcwYTc1LWE3N2QtNDkyYy1hZGVjLWFjMDg0NWE4NWM5ZSIsImJpVG9rZW4iOiI0MWE4ZjY3Yi00MzRjLTBjZGQtMzllYy1lZDk4ZGFmMjdiNjAiLCJzaXRlT3duZXJJZCI6IjE2MjkwNzY4LTUzMTktNGQxOS1hNzhjLWI2ZGEzM2I3MzNlMiIsImJzIjoiR1BCLTNQRmxmQzM2UXg2U1ZkcVFGTG0xMnZ1UVpBbnZtMWMwQk52dEFFYyIsInNjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDcuNTkxWiIsImFjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDNaIn0",
+   "event-details-national-sustainable-agriculture-summit"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png/v1/fill/w_768,h_768,fp_0.50_0.50,q_90,enc_auto/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png",
+   "event-list"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_194c27bd3c2d47e5b253241656bbfecf~mv2.png/v1/fill/w_768,h_768,fp_0.50_0.50,q_90,enc_auto/162907_194c27bd3c2d47e5b253241656bbfecf~mv2.png",
+   "event-list"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_8e711f3d13d64aacaa862bc51b1af6e8~mv2.png/v1/fill/w_768,h_768,fp_0.50_0.50,q_90,enc_auto/162907_8e711f3d13d64aacaa862bc51b1af6e8~mv2.png",
+   "event-list"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_14454b826eb6471a9e185628e8dd8276~mv2.jpg/v1/fill/w_616,h_1152,al_c,q_85,enc_avif,quality_auto/162907_14454b826eb6471a9e185628e8dd8276~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_8a9776af92984a9e82170d988bc393b9~mv2.jpg/v1/fill/w_810,h_681,al_c,q_85,enc_avif,quality_auto/162907_8a9776af92984a9e82170d988bc393b9~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png/v1/fill/w_863,h_768,fp_0.50_0.50,q_90,enc_auto/162907_a6714fe3d9b247f2bf2f3efcbeb6fb65~mv2.png",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_71c341cddd0142329ce96aba2ababa22~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_791a761ed52d414bae0d6ac949375274~mv2.jpg/v1/crop/x_127,y_0,w_907,h_646/fill/w_686,h_596,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PHOTO-2025-11-30-15-07-27.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_791a761ed52d414bae0d6ac949375274~mv2.jpg/v1/crop/x_127",
+   "home"
+  ],
+  [
+   "y_0",
+   "home"
+  ],
+  [
+   "w_907",
+   "home"
+  ],
+  [
+   "h_646/fill/w_343",
+   "home"
+  ],
+  [
+   "h_298",
+   "home"
+  ],
+  [
+   "q_80",
+   "home"
+  ],
+  [
+   "quality_auto/PHOTO-2025-11-30-15-07-27.jpg",
+   "home"
+  ],
+  [
+   "h_646/fill/w_686",
+   "home"
+  ],
+  [
+   "h_596",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_301fe0498bae45a79cf8ed83a2e476d7~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_e0a42917f3bc4fccbdccfa4e90574b31~mv2.jpg/v1/fill/w_1179,h_559,al_c,q_85,enc_avif,quality_auto/162907_e0a42917f3bc4fccbdccfa4e90574b31~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_9949c7be5b91497f9aeb4e98b99db495~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_791a761ed52d414bae0d6ac949375274~mv2.jpg/v1/fill/w_1160,h_593,al_c,q_85,enc_avif,quality_auto/162907_791a761ed52d414bae0d6ac949375274~mv2.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_f81ac54578dc498190d82ad237c98a7e~mv2.jpg/v1/crop/x_0,y_128,w_765,h_765/fill/w_242,h_242,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Elubo.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_f81ac54578dc498190d82ad237c98a7e~mv2.jpg/v1/crop/x_0",
+   "home"
+  ],
+  [
+   "y_128",
+   "home"
+  ],
+  [
+   "w_765",
+   "home"
+  ],
+  [
+   "h_765/fill/w_121",
+   "home"
+  ],
+  [
+   "h_121",
+   "home"
+  ],
+  [
+   "quality_auto/Elubo.jpg",
+   "home"
+  ],
+  [
+   "h_765/fill/w_242",
+   "home"
+  ],
+  [
+   "h_242",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_250b0606221b486c8029bc824f9e3054~mv2.png/v1/crop/x_0,y_689,w_1179,h_1179/fill/w_242,h_242,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_9300(2)_PNG.png",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_250b0606221b486c8029bc824f9e3054~mv2.png/v1/crop/x_0",
+   "home"
+  ],
+  [
+   "y_689",
+   "home"
+  ],
+  [
+   "w_1179",
+   "home"
+  ],
+  [
+   "h_1179/fill/w_121",
+   "home"
+  ],
+  [
+   "quality_auto/IMG_9300(2)_PNG.png",
+   "home"
+  ],
+  [
+   "h_1179/fill/w_242",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/11062b_93da4d9cdff143b6a06aa9557110cceb~mv2.jpeg/v1/fill/w_169,h_169,al_c,lg_1,q_80,enc_avif,quality_auto/pierre-chatel-innocenti-muMR2IhCbZ0-unsplash.jpeg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/11062b_93da4d9cdff143b6a06aa9557110cceb~mv2.jpeg/v1/fill/w_121",
+   "home"
+  ],
+  [
+   "quality_auto/pierre-chatel-innocenti-muMR2IhCbZ0-unsplash.jpeg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/11062b_93da4d9cdff143b6a06aa9557110cceb~mv2.jpeg/v1/fill/w_169",
+   "home"
+  ],
+  [
+   "h_169",
+   "home"
+  ],
+  [
+   "lg_1",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_b182ab4316b945a4bf6162f84ad5814bf000.jpg/v1/fill/w_442,h_380,al_c,lg_1,q_80,usm_0.33_1.00_0.00,enc_avif,quality_auto/162907_b182ab4316b945a4bf6162f84ad5814bf000.jpg",
+   "home"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_fb667c043cca46a7ba9ee922f87ff3b7f000.jpg/v1/fill/w_480,h_168,al_c,q_80,usm_0.33_1.00_0.00,enc_avif,quality_auto/162907_fb667c043cca46a7ba9ee922f87ff3b7f000.jpg",
+   "home"
+  ],
+  [
+   "https://video.wixstatic.com/video/162907_b182ab4316b945a4bf6162f84ad5814b/360p/mp4/file.mp4",
+   "home"
+  ],
+  [
+   "https://video.wixstatic.com/video/162907_fb667c043cca46a7ba9ee922f87ff3b7/480p/mp4/file.mp4",
+   "home"
+  ],
+  [
+   "IFRAME:https://instafeed.codev.wixapps.net/ig_business_app/widget?pageId=tww9d&compId=comp-mjdisu9x&viewerCompId=comp-mjdisu9x&siteRevision=42&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&width=1085&height=185&instance=SXpwFi9RuYIg2qo3diCqoCJ-0vkQgzL-mtGyiIlMjC8.eyJpbnN0YW5jZUlkIjoiN2E0NDAyMmEtOTg2OC00ZmFhLWI3NzItZjhjMzUxM2ZkNzk0IiwiYXBwRGVmSWQiOiIxNDYzNTI1Ni1iMTgzLTFjNzEtYTRkMi1mNTUxNzliODBlOGEiLCJtZXRhU2l0ZUlkIjoiMTEyMmMzYjYtNzM3Yi00YzVkLWEzZGMtNzBhNTFhYmJhMjQ1Iiwic2lnbkRhdGUiOiIyMDI2LTEwLTE3VDAyOjU0OjU0LjgwNloiLCJkZW1vTW9kZSI6ZmFsc2UsIm9yaWdpbkluc3RhbmNlSWQiOiJlMDc1YjY3ZC04MGMxLTQ1Y2ItOWY3NC02YTYwMWI0ZTQwNzMiLCJhaWQiOiJlMTQ5NmVlMS1iYjc4LTQxYmItYjlkYy01ZjA1ZGJmY2I0MWUiLCJiaVRva2VuIjoiNmI2NmMxOWMtZWIxMy0wM2Y3LTE0YWUtODg2NjRiODQ3NWQxIiwic2l0ZU93bmVySWQiOiIxNjI5MDc2OC01MzE5LTRkMTktYTc4Yy1iNmRhMzNiNzMzZTIiLCJicyI6IkxSZXpXTS1HNE5Ec1Z0RnhFVThtek45MWRzenItTFhtdl9YdTduZm9HQ1EiLCJzY2QiOiIyMDI1LTEyLTE5VDIyOjUxOjQ3LjU5MVoiLCJhY2QiOiIyMDI1LTEyLTE5VDIyOjUxOjQzWiJ9&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22c92b5f10-cbc7-44d9-a6cb-849040a54583%7C1%22%2C%22siteRevision%22%3A%2242%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en-us%22%2C%22BSI%22%3A%22c92b5f10-cbc7-44d9-a6cb-849040a54583%7C1%22%7D&currentRoute=.%2F&vsi=7ebb4a03-9df3-455f-9608-fd8e2eaa0cd8",
+   "home"
+  ],
+  [
+   "IFRAME:https://members.wixapps.net/_api/members-area/app/members?pageId=gqyiv&compId=TPASection_mjdishkc&viewerCompId=TPASection_mjdishkc&siteRevision=42&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&width=980&height=500&instance=c2pyvwZMJ7nE44dQRp0xhi9P6ZK7Z_vK08r5lHguKlI.eyJpbnN0YW5jZUlkIjoiYWZmZmQ3YzQtNjMwOC00M2U5LWIxZTYtMTExMGQwNTE4NGE3IiwiYXBwRGVmSWQiOiIxNGRiZWZkMi0wMWI0LWZiNjEtMzJhNy0zYWJkNDRkYTQ5MDgiLCJtZXRhU2l0ZUlkIjoiMTEyMmMzYjYtNzM3Yi00YzVkLWEzZGMtNzBhNTFhYmJhMjQ1Iiwic2lnbkRhdGUiOiIyMDI2LTEwLTE3VDAyOjU2OjI4LjE4NFoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImU4ZjM0YjY2LTVjMDMtNDgwNS05OTExLTUxZTQ5NWE2NWY0MCIsImJpVG9rZW4iOiJiZWRkMTQ3Mi0xMDczLTBmYjQtMTIzYS02MWI1Y2FlYTI2ZTIiLCJzaXRlT3duZXJJZCI6IjE2MjkwNzY4LTUzMTktNGQxOS1hNzhjLWI2ZGEzM2I3MzNlMiIsImJzIjoiTkZyOUplOWZUTE9QUy13UG5WYVBrWGxIOGdVUjBZaUtVNm9vYXQ1Y3YzYyIsInNjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDcuNTkxWiIsImFjZCI6IjIwMjUtMTItMTlUMjI6NTE6NDNaIn0&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22981f2893-fa03-407e-8a91-a2a8430c6dd0%7C1%22%2C%22siteRevision%22%3A%2242%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en-us%22%2C%22BSI%22%3A%22981f2893-fa03-407e-8a91-a2a8430c6dd0%7C1%22%7D&currentRoute=.%2Fmembers&target=_top&section-url=https%3A%2F%2Fwww.adewuragfici.com%2Fmembers%2F&vsi=46b2afc0-0681-4c84-809a-5e2f1e2fe31a",
+   "members"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_0471ec39e49147ccbe0458bd80ec5447~mv2.png/v1/fill/w_996,h_1246,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/162907_0471ec39e49147ccbe0458bd80ec5447~mv2.png",
+   "product-page-restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/162907_0471ec39e49147ccbe0458bd80ec5447~mv2.png/v1/fill/w_834,h_1076,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/162907_0471ec39e49147ccbe0458bd80ec5447~mv2.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24",
+   "restoria"
+  ],
+  [
+   "h_24",
+   "restoria"
+  ],
+  [
+   "quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_48",
+   "restoria"
+  ],
+  [
+   "h_48",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_24",
+   "restoria"
+  ],
+  [
+   "quality_auto/c7d035ba85f6486680c2facedecdcf4d.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_48",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ea5b4a88f0b4f91945b40499aa0af00.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_24",
+   "restoria"
+  ],
+  [
+   "quality_auto/6ea5b4a88f0b4f91945b40499aa0af00.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_48",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_24",
+   "restoria"
+  ],
+  [
+   "quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png",
+   "restoria"
+  ],
+  [
+   "https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_48",
+   "restoria"
+  ]
+ ]
+}
