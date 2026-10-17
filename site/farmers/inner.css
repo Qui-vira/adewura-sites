@@ -1,0 +1,154 @@
+/* Inner pages: the homepage's type, colours and pills, on calm light grounds and without the
+   3D stage. Loaded after dist/style.css, which supplies the tokens, nav, pills and footer. */
+
+.inner { background: var(--cream); }
+.inner main { padding-top: var(--nav-h); }
+.nav__left .pill[aria-current='page'] { --pill-bg: var(--olive); --pill-fg: var(--butter); }
+
+/* below 1100px the nav keeps only the parent link, so the page links sit under it */
+.pages {
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem var(--gutter) 0;
+  background: var(--butter);
+}
+.pages .pill { min-height: 2.5rem; }
+.pages .pill[aria-current='page'] { --pill-bg: var(--olive); --pill-fg: var(--butter); }
+@media (max-width: 1100px) { .pages { display: flex; } }
+
+/* ---------- Page head ---------- */
+
+.phead {
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(3rem, 9vw, 7rem) var(--gutter) clamp(3rem, 8vw, 6rem);
+  background: var(--butter);
+}
+.phead h1 {
+  max-width: 14ch;
+  font: 900 clamp(2.6rem, 8vw, 7rem)/0.88 var(--display);
+  font-stretch: 125%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+.phead p { max-width: 46ch; font-size: clamp(1.0625rem, 1.6vw, 1.3125rem); }
+.phead__links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+
+/* ---------- Bands ---------- */
+
+.band {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  padding: clamp(4rem, 10vw, 8rem) var(--gutter);
+  background: var(--cream);
+  scroll-margin-top: var(--nav-h);
+}
+.band--maize { background: var(--maize); }
+.band--maize .band__label { color: var(--olive); }
+.band--leaf { background: var(--leaf); color: var(--cream); }
+.band h2 {
+  max-width: 16ch;
+  font: 900 clamp(2.2rem, 6.4vw, 5.5rem)/0.88 var(--display);
+  font-stretch: 125%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+.band--leaf h2 { color: var(--cream); }
+.band h3 {
+  font: 800 clamp(1.25rem, 2vw, 1.6rem)/1.1 var(--display);
+  font-stretch: 112%;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: var(--olive);
+}
+.band p { max-width: 52ch; font-size: clamp(1.0625rem, 1.4vw, 1.1875rem); }
+.band__label {
+  font: 700 0.8125rem/1 var(--body);
+  font-stretch: 112%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--soil);
+}
+.band__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.band hr { width: 100%; margin: 0; border: 0; border-top: 2px dotted rgb(41 41 31 / 0.45); }
+
+/* ---------- Founder ---------- */
+
+.founder {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+}
+.founder img { width: min(100%, 26rem); justify-self: center; border-radius: 1.25rem; }
+.founder__body { display: grid; gap: 1rem; }
+.founder__role {
+  font: 700 0.9375rem/1.2 var(--body);
+  font-stretch: 112%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--leaf);
+}
+.founder__name { max-width: 14ch; }
+
+/* ---------- Photo grids ---------- */
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  align-items: start;
+  margin: 0;
+}
+.photos--wide { grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.photos--one { max-width: 24rem; }
+.photo { margin: 0; display: grid; gap: 0.6rem; }
+.photo img, .photo video {
+  width: 100%;
+  border-radius: 1rem;
+  background: rgb(64 63 43 / 0.1);
+  box-shadow: 0 1.5rem 2.5rem -1.75rem rgb(64 63 43 / 0.55);
+}
+.photo figcaption { font-size: 0.9375rem; color: var(--olive); }
+
+/* ---------- Program jump links ---------- */
+
+.programs-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.programs-list li { border-top: 2px dotted rgb(41 41 31 / 0.45); }
+.programs-list li:last-child { border-bottom: 2px dotted rgb(41 41 31 / 0.45); }
+.programs-list a {
+  display: block;
+  padding: 1rem 0;
+  font: 900 clamp(1.6rem, 4.6vw, 3.4rem)/1 var(--display);
+  font-stretch: 125%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--olive);
+}
+@media (hover: hover) and (pointer: fine) {
+  .programs-list a { transition: transform 200ms var(--ease-out); }
+  .programs-list a:hover { transform: translateX(0.5rem); }
+}
+
+.pending { font-style: italic; color: var(--olive); }
+
+/* ---------- Contact ---------- */
+
+.contact-card {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 34rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: 1.5rem;
+  background: var(--butter);
+}
+.contact-card a { font-size: clamp(1.125rem, 2.4vw, 1.5rem); font-weight: 650; overflow-wrap: anywhere; }
+
+@media (max-width: 760px) {
+  .founder { grid-template-columns: 1fr; }
+  .founder img { width: min(100%, 20rem); justify-self: start; }
+}

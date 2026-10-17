@@ -51,6 +51,18 @@
     {
       "path": "/ategbe/learn/",
       "priority": 0.7
+    },
+    {
+      "path": "/farmers/about/",
+      "priority": 0.7
+    },
+    {
+      "path": "/farmers/programs/",
+      "priority": 0.7
+    },
+    {
+      "path": "/farmers/contact/",
+      "priority": 0.7
     }
   ],
   "whatsapp": {
@@ -94,7 +106,13 @@
       "to": "/ategbe/"
     },
     "adewuragiantfarmers.org": {
-      "paths": [],
+      "paths": {
+        "/about-2": "/farmers/about/",
+        "/programs": "/farmers/programs/",
+        "/corn-field": "/farmers/programs/",
+        "/livestock-farming": "/farmers/programs/",
+        "/contact": "/farmers/contact/"
+      },
       "catchAll": true,
       "to": "/farmers/"
     }
