@@ -164,3 +164,12 @@
 
 .inner .text-link { text-decoration-color: rgb(47 79 43 / 0.45); color: var(--forest-deep); }
 @media (hover: hover) and (pointer: fine) { .inner .text-link:hover { text-decoration-color: currentColor; } }
+
+/* restored from the old site: offers, badges and the longer B Vtán story */
+.offer { padding: 0.75rem 1rem; border-left: 3px solid var(--hibiscus); background: rgba(255, 255, 255, 0.55); }
+.badges { font-size: 0.9375rem; color: var(--forest); }
+.more { margin-top: 0.25rem; }
+.more summary { cursor: pointer; font-weight: 600; color: var(--forest); text-decoration: underline; text-underline-offset: 0.2em; }
+.more[open] summary { margin-bottom: 0.75rem; }
+.more > * + * { margin-top: 0.75rem; }
+.more ul { padding-left: 1.2rem; }

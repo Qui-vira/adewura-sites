@@ -756,3 +756,8 @@ em { font-style: italic; }
   .reign__mark { width: 4rem; }
   .prose__figure { max-width: 30rem; }
 }
+
+/* restored from the old site: the Àkóṣe workshop review and the spiritual treasures */
+.prose blockquote { margin: 0; padding: 1rem 1.25rem; border-left: 3px solid currentColor; background: rgb(255 255 255 / 0.5); }
+.prose blockquote footer { margin-top: 0.6rem; font-size: 0.9375rem; }
+.treasures { display: grid; gap: 0.6rem; margin: 0; padding-left: 1.2rem; }
