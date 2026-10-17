@@ -32,6 +32,13 @@ function setSound(on) {
 }
 toggle.addEventListener('click', () => setSound(!sound.on));
 document.addEventListener('pointerdown', (e) => { if (e.target.closest('.pill, .sound')) sound.tap(); });
+// the wind follows the scroll speed, and settles when the visitor stops
+let windIdle = 0;
+lenis.on('scroll', ({ velocity }) => {
+  sound.scroll(velocity / 40);
+  clearTimeout(windIdle);
+  windIdle = setTimeout(() => sound.scroll(0), 160);
+});
 
 // ---------- Intro sentence and particles ----------
 const stage = document.querySelector('.stage');
@@ -48,11 +55,10 @@ const particles = createParticles(document.getElementById('particles'), { count:
 // at: the scroll window in which a house stands in front of the visitor. Before it, the camera
 // passes through a cloud bank; after it, the house rushes past and the next bank closes in.
 // rest: the brand's own scroll progress that shows its object well; sway: how far it idles around that.
-// tone: the bell each house rings on arrival (sound.js keeps the original order).
 const DOORS = [
-  { brand: 'ategbe', load: () => import('../ategbe/src/scene.js'), at: [0.2, 0.34], rest: 0.32, sway: 0.05, tone: 1 },
-  { brand: 'farmers', load: () => import('../farmers/src/scene.js'), at: [0.47, 0.61], rest: 0.4, sway: 0.045, tone: 2 },
-  { brand: 'natural', load: () => import('../natural/src/scene.js'), at: [0.74, 2], rest: 0.315, sway: 0.012, tone: 0 },
+  { brand: 'ategbe', load: () => import('../ategbe/src/scene.js'), at: [0.2, 0.34], rest: 0.32, sway: 0.05 },
+  { brand: 'farmers', load: () => import('../farmers/src/scene.js'), at: [0.47, 0.61], rest: 0.4, sway: 0.045 },
+  { brand: 'natural', load: () => import('../natural/src/scene.js'), at: [0.74, 2], rest: 0.315, sway: 0.012 },
 ].map((d, i) => {
   const el = document.querySelector(`.door--${d.brand}`);
   return { ...d, i, el, canvas: el.querySelector('.door__gl'), text: el.querySelector('.door__text'), scene: null, loading: null, running: false, e: 0, l: 0, arrived: false };
@@ -125,6 +131,7 @@ function setRunning(door, run) {
 
 let p = 0;
 let lastSky = '';
+const passed = BANKS.map(() => false);
 function setProgress(v) {
   p = v;
   particles.setProgress(p);
@@ -141,7 +148,13 @@ function setProgress(v) {
   clouds?.setZ(z);
   // the screen goes white as the camera passes through each bank
   let fog = 0;
-  for (const b of BANKS) fog = Math.max(fog, 1 - Math.abs(z - b) / 26);
+  BANKS.forEach((b, i) => {
+    const f = 1 - Math.abs(z - b) / 26;
+    fog = Math.max(fog, f);
+    // a whoosh as each bank closes in, once per pass
+    if (f > 0.2 && !passed[i]) { passed[i] = true; sound.passage(); }
+    if (f < 0.02) passed[i] = false;
+  });
   veil.style.opacity = (smooth(clamp01(fog)) * 0.94).toFixed(3);
 
   const c = skyAt(p);
@@ -174,7 +187,7 @@ function setProgress(v) {
     door.text.style.transform = `translate3d(0, ${((1 - easeOut(tIn)) * 6 - tOut * 4).toFixed(2)}vh, 0)`;
     door.el.classList.toggle('is-open', tIn > 0.9 && tOut < 0.1);
     if (shown > 0.5) current = i;
-    if (tIn >= 1 && tOut === 0 && !door.arrived) { door.arrived = true; sound.house(door.tone); }
+    if (tIn >= 1 && tOut === 0 && !door.arrived) { door.arrived = true; sound.house(door.i); }
     if (tIn < 0.9 || tOut > 0) door.arrived = false;
     setRunning(door, shown > 0);
   });
