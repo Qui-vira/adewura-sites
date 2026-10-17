@@ -56,10 +56,13 @@
       </div>
     </header>
 
-    <section class="band" id="corn-field" aria-labelledby="corn-title">
-      <p class="band__label">Program 1</p>
-      <h2 id="corn-title">Corn field</h2>
-      <div class="photos photos--wide">
+    <section class="prog" id="corn-field" aria-labelledby="corn-title">
+      <header class="prog__head">
+        <p class="prog__num">Program 1</p>
+        <h2 id="corn-title">Corn field</h2>
+        <p class="prog__lede">From uncleared bush to a field of maize, in the farm&rsquo;s own photos and videos.</p>
+      </header>
+      <div class="prog__feature">
         <figure class="photo">
           <img src="../img/field-workers-640.webp" srcset="../img/field-workers-640.webp 640w, ../img/field-workers-1280.webp 1280w" sizes="(min-width: 900px) 45vw, 92vw" width="640" height="480" loading="lazy" decoding="async" alt="About twenty young men, the farm's field workers, standing and crouching together at the edge of a field">
           <figcaption>Some of the field workers</figcaption>
@@ -69,85 +72,115 @@
           <figcaption>Maize in the field</figcaption>
         </figure>
       </div>
-      <h3 class="steps__title">The corn project, step by step</h3>
-      <div class="step">
-        <h3>Opening up for the corn project</h3>
-        <div class="clips">
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn02-poster.webp" aria-label="Uncleared bush where the corn farm was to be opened"><source src="../video/corn02.mp4" type="video/mp4"></video>
-          <video controls preload="none" playsinline width="480" height="854" poster="../video/corn01-poster.webp" aria-label="A bulldozer clearing the land"><source src="../video/corn01.mp4" type="video/mp4"></video>
-          <video controls preload="none" playsinline width="480" height="854" poster="../video/corn05-poster.webp" aria-label="The cleared land, with the bulldozer working in the distance"><source src="../video/corn05.mp4" type="video/mp4"></video>
-        </div>
-      </div>
-      <div class="step">
-        <h3>Road construction to the farm</h3>
-        <div class="clips">
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn03-poster.webp" aria-label="A bulldozer cutting a red-earth road through the bush to the farm"><source src="../video/corn03.mp4" type="video/mp4"></video>
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn04-poster.webp" aria-label="The new road to the farm, freshly cut"><source src="../video/corn04.mp4" type="video/mp4"></video>
-        </div>
-      </div>
-      <div class="step">
-        <h3>Ploughing the corn farm</h3>
-        <div class="clips">
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn07-poster.webp" aria-label="A green tractor ploughing the cleared field"><source src="../video/corn07.mp4" type="video/mp4"></video>
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn06-poster.webp" aria-label="The ploughed field"><source src="../video/corn06.mp4" type="video/mp4"></video>
-        </div>
-      </div>
-      <div class="step">
-        <h3>The maize growing</h3>
-        <div class="clips">
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn08-poster.webp" aria-label="A green field of young maize"><source src="../video/corn08.mp4" type="video/mp4"></video>
-        </div>
-      </div>
+      <ol class="timeline" aria-label="The corn project, step by step">
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__n" aria-hidden="true">1</span><h3>Opening up for the corn project</h3>
+            <p class="tl__count">3 videos</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn02-poster.webp" aria-label="Uncleared bush where the corn farm was to be opened"><source src="../video/corn02.mp4" type="video/mp4"></video></div>
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="854" poster="../video/corn01-poster.webp" aria-label="A bulldozer clearing the land"><source src="../video/corn01.mp4" type="video/mp4"></video></div>
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="854" poster="../video/corn05-poster.webp" aria-label="The cleared land, with the bulldozer working in the distance"><source src="../video/corn05.mp4" type="video/mp4"></video></div>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__n" aria-hidden="true">2</span><h3>Road construction to the farm</h3>
+            <p class="tl__count">2 videos</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn03-poster.webp" aria-label="A bulldozer cutting a red-earth road through the bush to the farm"><source src="../video/corn03.mp4" type="video/mp4"></video></div>
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn04-poster.webp" aria-label="The new road to the farm, freshly cut"><source src="../video/corn04.mp4" type="video/mp4"></video></div>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__n" aria-hidden="true">3</span><h3>Ploughing the corn farm</h3>
+            <p class="tl__count">2 videos</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn07-poster.webp" aria-label="A green tractor ploughing the cleared field"><source src="../video/corn07.mp4" type="video/mp4"></video></div>
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn06-poster.webp" aria-label="The ploughed field"><source src="../video/corn06.mp4" type="video/mp4"></video></div>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__n" aria-hidden="true">4</span><h3>The maize growing</h3>
+            <p class="tl__count">1 video</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn08-poster.webp" aria-label="A green field of young maize"><source src="../video/corn08.mp4" type="video/mp4"></video></div>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <section class="band band--maize" id="livestock" aria-labelledby="livestock-title">
-      <p class="band__label">Program 2</p>
-      <h2 id="livestock-title">Livestock farming</h2>
-      <h3>Animal husbandry</h3>
-      <div class="photos">
-        <figure class="photo">
-          <img src="../img/cattle-1-640.webp" srcset="../img/cattle-1-640.webp 640w, ../img/cattle-1-765.webp 765w" sizes="(min-width: 900px) 30vw, 92vw" width="640" height="853" loading="lazy" decoding="async" alt="A white cow with black speckles standing in a sandy enclosure among other cattle">
-        </figure>
-        <figure class="photo">
-          <img src="../img/cattle-2-640.webp" srcset="../img/cattle-2-640.webp 640w, ../img/cattle-2-765.webp 765w" sizes="(min-width: 900px) 30vw, 92vw" width="640" height="853" loading="lazy" decoding="async" alt="White cattle resting and standing on bare ground, with thatched huts and trees behind">
-        </figure>
-        <figure class="photo">
-          <img src="../img/cattle-3-607.webp" sizes="(min-width: 900px) 30vw, 92vw" width="607" height="1080" loading="lazy" decoding="async" alt="White cattle grazing in tall green grass">
-        </figure>
-      </div>
-      <h3>Goat section</h3>
-      <div class="photos photos--one">
-        <figure class="photo">
-          <img src="../img/goats-640.webp" srcset="../img/goats-640.webp 640w, ../img/goats-810.webp 810w" sizes="(min-width: 900px) 30vw, 92vw" width="640" height="853" loading="lazy" decoding="async" alt="Two white and brown goats standing on bare ground">
-        </figure>
-      </div>
+    <section class="prog prog--maize" id="livestock" aria-labelledby="livestock-title">
+      <header class="prog__head">
+        <p class="prog__num">Program 2</p>
+        <h2 id="livestock-title">Livestock farming</h2>
+      </header>
+      <ol class="timeline timeline--plain">
+        <li class="tl">
+          <div class="tl__meta">
+            <h3>Animal husbandry</h3>
+            <p class="tl__count">Cattle</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><img src="../img/cattle-1-640.webp" srcset="../img/cattle-1-640.webp 640w, ../img/cattle-1-765.webp 765w" sizes="(min-width: 900px) 22vw, 46vw" width="640" height="853" loading="lazy" decoding="async" alt="A white cow with black speckles standing in a sandy enclosure among other cattle"></div>
+            <div class="ptile"><img src="../img/cattle-2-640.webp" srcset="../img/cattle-2-640.webp 640w, ../img/cattle-2-765.webp 765w" sizes="(min-width: 900px) 22vw, 46vw" width="640" height="853" loading="lazy" decoding="async" alt="White cattle resting and standing on bare ground, with thatched huts and trees behind"></div>
+            <div class="ptile"><img src="../img/cattle-3-607.webp" sizes="(min-width: 900px) 22vw, 46vw" width="607" height="1080" loading="lazy" decoding="async" alt="White cattle grazing in tall green grass"></div>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__meta">
+            <h3>Goat section</h3>
+            <p class="tl__count">Goats</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><img src="../img/goats-640.webp" srcset="../img/goats-640.webp 640w, ../img/goats-810.webp 810w" sizes="(min-width: 900px) 22vw, 46vw" width="640" height="853" loading="lazy" decoding="async" alt="Two white and brown goats standing on bare ground"></div>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <section class="band" id="poultry" aria-labelledby="poultry-title">
-      <p class="band__label">Program 3</p>
-      <h2 id="poultry-title">Poultry farming</h2>
-      <p class="pending">Details of this program are coming from the farm.</p>
+    <section class="prog" id="poultry" aria-labelledby="poultry-title">
+      <header class="prog__head">
+        <p class="prog__num">Program 3</p>
+        <h2 id="poultry-title">Poultry farming</h2>
+        <p class="pending">Details of this program are coming from the farm.</p>
+      </header>
     </section>
 
-    <section class="band band--maize" id="plantain" aria-labelledby="plantain-title">
-      <p class="band__label">Program 4</p>
-      <h2 id="plantain-title">Plantain farming</h2>
-      <p class="pending">Details of this program are coming from the farm.</p>
-      <div class="step">
-        <h3>Measurements and planting of plantain</h3>
-        <div class="clips">
-          <video controls preload="none" playsinline width="480" height="848" poster="../video/corn09-poster.webp" aria-label="A field worker measuring out the plantain rows with a tape"><source src="../video/corn09.mp4" type="video/mp4"></video>
-          <video controls preload="none" playsinline width="636" height="360" poster="../video/corn10-poster.webp" aria-label="Close view of the ground as the plantain holes are marked and dug"><source src="../video/corn10.mp4" type="video/mp4"></video>
-          <video controls preload="none" playsinline width="636" height="360" poster="../video/corn11-poster.webp" aria-label="Close view of the planting holes in the field"><source src="../video/corn11.mp4" type="video/mp4"></video>
-        </div>
-      </div>
-      <div class="step">
-        <h3>From the plantain stem</h3>
-        <p>In a home demonstration, Dr. <span lang="yo">Adéwálé</span> cuts a section of plantain stem and runs it through a juicer, so the juice and the pulp collect separately. The pulp, he explains, can be used for many things, including clothing, paper and filling.</p>
-        <div class="clips clips--wide">
-          <video controls preload="none" playsinline width="848" height="480" poster="../video/programs-poster.webp" aria-label="Dr. Adéwálé processing a plantain stem with a juicer in his kitchen"><source src="../video/programs.mp4" type="video/mp4"></video>
-        </div>
-      </div>
+    <section class="prog prog--maize" id="plantain" aria-labelledby="plantain-title">
+      <header class="prog__head">
+        <p class="prog__num">Program 4</p>
+        <h2 id="plantain-title">Plantain farming</h2>
+        <p class="pending">Details of this program are coming from the farm.</p>
+      </header>
+      <ol class="timeline">
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__n" aria-hidden="true">1</span><h3>Measurements and planting of plantain</h3>
+            <p class="tl__count">3 videos</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile"><video controls preload="none" playsinline width="480" height="848" poster="../video/corn09-poster.webp" aria-label="A field worker measuring out the plantain rows with a tape"><source src="../video/corn09.mp4" type="video/mp4"></video></div>
+            <div class="ptile"><video controls preload="none" playsinline width="636" height="360" poster="../video/corn10-poster.webp" aria-label="Close view of the ground as the plantain holes are marked and dug"><source src="../video/corn10.mp4" type="video/mp4"></video></div>
+            <div class="ptile"><video controls preload="none" playsinline width="636" height="360" poster="../video/corn11-poster.webp" aria-label="Close view of the planting holes in the field"><source src="../video/corn11.mp4" type="video/mp4"></video></div>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__n" aria-hidden="true">2</span><h3>From the plantain stem</h3>
+            <p>In a home demonstration, Dr. <span lang="yo">Adéwálé</span> cuts a section of plantain stem and runs it through a juicer, so the juice and the pulp collect separately. The pulp, he explains, can be used for many things, including clothing, paper and filling.</p>
+          </div>
+          <div class="tl__media">
+            <div class="ptile ptile--wide"><video controls preload="none" playsinline width="848" height="480" poster="../video/programs-poster.webp" aria-label="Dr. Adéwálé processing a plantain stem with a juicer in his kitchen"><source src="../video/programs.mp4" type="video/mp4"></video></div>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <section class="band band--leaf" aria-labelledby="grow-title">

@@ -158,10 +158,95 @@
 .founder__message footer { font-weight: 600; }
 .band--intro { padding-bottom: 0; }
 
-/* the farm's own videos: steps of the corn project and the plantain work */
-.steps__title { margin-top: 1rem; }
-.step { display: grid; gap: 0.9rem; margin-top: 1.5rem; }
-.step > p { max-width: 60ch; }
-.clips { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 1rem; align-items: start; }
-.clips--wide { grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); }
-.clips video { display: block; width: 100%; height: auto; border-radius: 1rem; background: var(--olive); box-shadow: 0 1rem 2rem -1.25rem rgb(64 63 43 / 0.5); }
+
+/* ---------- Programs: one section per program, each a numbered timeline ---------- */
+
+.prog {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  padding: clamp(4rem, 9vw, 7rem) var(--gutter);
+  background: var(--cream);
+  scroll-margin-top: var(--nav-h);
+}
+.prog--maize { background: var(--maize); }
+.prog__head { display: grid; gap: 1rem; max-width: 46rem; }
+.prog__num {
+  font: 700 0.8125rem/1 var(--body);
+  font-stretch: 112%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--soil);
+}
+.prog--maize .prog__num { color: var(--olive); }
+.prog h2 {
+  font: 900 clamp(2.4rem, 7vw, 6rem)/0.88 var(--display);
+  font-stretch: 125%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+.prog__lede { max-width: 46ch; font-size: clamp(1.0625rem, 1.5vw, 1.25rem); }
+.prog__feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  align-items: start;
+}
+
+.timeline { display: grid; margin: 0; padding: 0; list-style: none; }
+.tl {
+  display: grid;
+  grid-template-columns: minmax(14rem, 20rem) minmax(0, 1fr);
+  gap: clamp(1.25rem, 3vw, 3rem);
+  padding: clamp(1.75rem, 3.5vw, 2.75rem) 0;
+  border-top: 2px dotted rgb(41 41 31 / 0.4);
+}
+.tl:last-child { border-bottom: 2px dotted rgb(41 41 31 / 0.4); }
+.tl__meta { display: grid; align-content: start; gap: 0.6rem; }
+.tl__n {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--olive);
+  color: var(--butter);
+  font: 800 1rem/1 var(--display);
+}
+.tl h3 {
+  font: 800 clamp(1.25rem, 2.1vw, 1.75rem)/1.05 var(--display);
+  font-stretch: 112%;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+.tl__count { font-size: 0.9375rem; color: var(--olive); }
+.tl__meta p:not(.tl__count) { max-width: 36ch; }
+.tl__media {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+  gap: clamp(0.75rem, 1.6vw, 1.25rem);
+  align-content: start;
+}
+/* every tile the same portrait shape, whether the clip was filmed tall or wide */
+.ptile { position: relative; aspect-ratio: 9 / 16; border-radius: 1rem; overflow: hidden; background: var(--olive); box-shadow: 0 1.25rem 2rem -1.5rem rgb(64 63 43 / 0.6); }
+.ptile--wide { grid-column: 1 / -1; aspect-ratio: 16 / 9; max-width: 48rem; }
+.ptile video, .ptile img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ptile--wide video { object-fit: contain; background: #1f1e14; }
+
+.prog .pending {
+  justify-self: start;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.55);
+  font-style: normal;
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 760px) {
+  .tl { grid-template-columns: 1fr; }
+  .tl__meta { grid-template-columns: auto 1fr; align-items: center; column-gap: 0.75rem; }
+  .tl__meta > :not(.tl__n) { grid-column: 2; }
+  .timeline--plain .tl__meta { grid-template-columns: 1fr; }
+  .timeline--plain .tl__meta > * { grid-column: 1; }
+  .tl__media { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
