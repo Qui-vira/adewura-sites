@@ -582,7 +582,7 @@ p { margin: 0; text-wrap: pretty; }
   inset: 0;
   display: grid;
   grid-template-rows: 1fr auto;
-  padding: var(--nav-h) var(--gutter) 1.5rem;
+  padding: var(--nav-h) var(--gutter) 4.75rem; /* keeps the foot links clear of the host badge */
 }
 .welcome__center { display: grid; place-content: center; justify-items: center; gap: 1.1rem; text-align: center; }
 .welcome__title { font: 400 clamp(3.4rem, 11vw, 9.5rem)/0.92 var(--serif); letter-spacing: -0.03em; color: var(--mint); }

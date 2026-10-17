@@ -498,7 +498,7 @@ em { font-style: italic; }
   inset: 0;
   display: grid;
   grid-template-rows: 1fr auto;
-  padding: var(--nav-h) var(--gutter) 1.5rem;
+  padding: var(--nav-h) var(--gutter) 4.75rem; /* keeps the foot links clear of the host badge */
 }
 .welcome__center {
   display: grid;
