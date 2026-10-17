@@ -1,6 +1,6 @@
 // The parent's opening, after museum.unesco.org: the wordmark first, then "load ___ ing" with
 // objects from all three houses swapping in the gap, then a welcome scene whose Enter turns
-// the sound on (browsers only allow sound after a tap).
+// the sound on (browsers only allow sound after a tap). The welcome sits on the cloud sky.
 import { gsap } from 'gsap';
 import { icons as naturalIcons } from '../natural/src/icons.js';
 import { icons as ategbeIcons } from '../ategbe/src/icons.js';
@@ -81,7 +81,11 @@ export async function runOpening({ ready, reduced, parentName, onEnter }) {
     mark.style.display = 'none';
   }
 
-  // 4. Welcome
+  // 4. The cream lifts away and the clouds show through, as UNESCO's loader gives way to its sky
+  overlay.classList.add('is-sky');
+  gsap.to(overlay, { backgroundColor: 'rgba(245, 239, 228, 0)', duration: reduced ? 0.01 : 1.4, ease: 'power2.inOut' });
+
+  // 5. Welcome
   const welcome = el('div', 'welcome', `
     <div class="welcome__center">
       <p class="welcome__title" aria-hidden="true"></p>

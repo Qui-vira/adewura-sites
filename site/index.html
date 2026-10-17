@@ -41,9 +41,9 @@
 
   <header class="nav" id="nav">
     <nav class="nav__left" aria-label="The three houses">
-      <a class="nav__link" href="#door-natural" data-door="0">Adewura Natural</a>
-      <a class="nav__link" href="#door-ategbe" data-door="1">Ilé Àtègbè</a>
-      <a class="nav__link" href="#door-farmers" data-door="2">Trust Fund</a>
+      <a class="nav__link" href="#door-ategbe" data-door="0">Ilé Àtègbè</a>
+      <a class="nav__link" href="#door-farmers" data-door="1">Trust Fund</a>
+      <a class="nav__link" href="#door-natural" data-door="2">Adewura Natural</a>
     </nav>
     <a class="wordmark" id="wordmark" href="#top"><span data-parent-name>Adewura Group</span></a>
     <div class="nav__right">
@@ -56,25 +56,17 @@
   <main id="main">
     <section class="stage" id="top" aria-label="Three houses">
       <div class="stage__sticky">
+        <div class="sky" id="sky" aria-hidden="true">
+          <canvas class="sky__clouds" id="clouds"></canvas>
+          <div class="sky__rays"></div>
+        </div>
         <div class="intro" id="intro">
           <canvas class="intro__particles" id="particles" aria-hidden="true"></canvas>
           <h1 class="intro__line"><span class="intro__a">Three houses.</span> <span class="intro__b">One family.</span></h1>
-          <p class="intro__cue" aria-hidden="true"><span class="intro__mouse"></span>Scroll to explore</p>
+          <p class="intro__cue" aria-hidden="true"><span class="intro__ring"><span class="intro__mouse"></span></span>Scroll to explore</p>
         </div>
 
         <div class="doors" id="houses">
-          <article class="door door--natural" id="door-natural" data-brand="natural" aria-labelledby="door-natural-title">
-            <canvas class="door__gl" aria-hidden="true"></canvas>
-            <div class="door__text">
-              <h2 class="door__name" id="door-natural-title">Adewura Natural</h2>
-              <p class="door__line">Adewura Natural Medical Centre: natural remedies, led by Dr. Ifábùkúnmi O. Adéwálé.</p>
-              <div class="door__actions">
-                <a class="pill pill--solid door__visit" href="natural/">Visit <span class="pill__dot" aria-hidden="true"></span></a>
-                <a class="pill pill--line" data-booking="natural" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Adewura%20Natural%20Medical%20Centre.">Book a call</a>
-              </div>
-            </div>
-          </article>
-
           <article class="door door--ategbe" id="door-ategbe" data-brand="ategbe" aria-labelledby="door-ategbe-title">
             <canvas class="door__gl" aria-hidden="true"></canvas>
             <div class="door__text">
@@ -98,7 +90,20 @@
               </div>
             </div>
           </article>
+
+          <article class="door door--natural" id="door-natural" data-brand="natural" aria-labelledby="door-natural-title">
+            <canvas class="door__gl" aria-hidden="true"></canvas>
+            <div class="door__text">
+              <h2 class="door__name" id="door-natural-title">Adewura Natural</h2>
+              <p class="door__line">Adewura Natural Medical Centre: natural remedies, led by Dr. Ifábùkúnmi O. Adéwálé.</p>
+              <div class="door__actions">
+                <a class="pill pill--solid door__visit" href="natural/">Visit <span class="pill__dot" aria-hidden="true"></span></a>
+                <a class="pill pill--line" data-booking="natural" href="https://wa.me/16783736836?text=Hello%2C%20I%20would%20like%20to%20book%20a%20call%20with%20Adewura%20Natural%20Medical%20Centre.">Book a call</a>
+              </div>
+            </div>
+          </article>
         </div>
+        <div class="veil" id="veil" aria-hidden="true"></div>
       </div>
     </section>
   </main>
