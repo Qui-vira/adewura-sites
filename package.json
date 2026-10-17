@@ -1,0 +1,17 @@
+{
+  "name": "adewura-sites",
+  "private": true,
+  "description": "Rebrand prototypes for AGFICI, Adewura Natural and Ilé Àtègbè",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "dev": "node tools/build.mjs --watch",
+    "serve": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "gsap": "3.15.0",
+    "lenis": "1.3.26",
+    "three": "0.186.1"
+  }
+}
