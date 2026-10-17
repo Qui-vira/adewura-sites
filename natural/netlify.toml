@@ -1,0 +1,5 @@
+# Netlify settings for this site. Set the Netlify base directory to "natural".
+# The built files are already in the repo, so there is no build step.
+[build]
+  publish = "."
+  command = ""
